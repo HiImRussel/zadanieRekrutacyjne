@@ -1,5 +1,11 @@
 .homeBanner {
   width: 100vw;
+  display: flex;
+
+  img {
+    margin-top: 7%;
+    margin-left: 5%;
+  }
 }
 
 .homeBanner-left {

@@ -13,8 +13,8 @@ const NavLogo = () => {
           y1="49.807%"
           y2="49.807%"
         >
-          <stop offset="0%" stop-color="#97E6F5" />
-          <stop offset="100%" stop-color="#97E6F5" />
+          <stop offset="0%" stopColor="#97E6F5" />
+          <stop offset="100%" stopColor="#97E6F5" />
         </linearGradient>
       </defs>
       <g fill="none">
