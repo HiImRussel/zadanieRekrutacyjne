@@ -2,9 +2,8 @@ const NavLogo = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="122"
-      height="12"
       viewBox="0 0 122 12"
+      className="navLogo"
     >
       <defs>
         <linearGradient
