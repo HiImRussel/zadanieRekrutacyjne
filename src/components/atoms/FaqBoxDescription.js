@@ -1,5 +1,12 @@
 const FaqDescription = ({ desc }) => {
-  return <p class="faqDescription">{desc}</p>;
+  return (
+    <p
+      className="faqDescription"
+      style={{ visibility: "hidden", opacity: 0, maxHeight: "0px" }}
+    >
+      {desc}
+    </p>
+  );
 };
 
 export default FaqDescription;

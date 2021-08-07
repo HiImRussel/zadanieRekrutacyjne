@@ -3,7 +3,7 @@ import faqIMG from "../../assets/home-page/illustration-faq.png";
 
 const FaqLeft = () => {
   return (
-    <div class="faqLeft">
+    <div className="faqLeft">
       <h2>
         Najszęściej zadawane <br />
         pytania

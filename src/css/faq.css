@@ -34,4 +34,66 @@
   -webkit-transform: translateX(-130px);
           transform: translateX(-130px);
 }
+
+.faqBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faqBox {
+  margin-top: 30px;
+  background-color: #4432ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 45px 30px;
+}
+
+.faqBox:nth-child(1) {
+  margin-top: 0px;
+}
+
+.faqBoxTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faqBoxTitle h3 {
+  font-weight: 600;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.faqBoxTitle svg {
+  height: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.faqBoxTitle svg path {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  fill: white;
+}
+
+.faqDescription {
+  line-height: 30px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
 /*# sourceMappingURL=faq.css.map */

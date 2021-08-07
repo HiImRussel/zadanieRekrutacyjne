@@ -30,3 +30,49 @@
     transform: translateX(-130px);
   }
 }
+
+.faqBoxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqBox {
+  margin-top: 30px;
+  background-color: #4432ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 45px 30px;
+
+  &:nth-child(1) {
+    margin-top: 0px;
+  }
+}
+
+.faqBoxTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-weight: 600;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  svg {
+    height: 15px;
+    transition: all 0.3s ease-in-out;
+
+    path {
+      transition: all 0.3s ease-in-out;
+      fill: white;
+    }
+  }
+}
+
+.faqDescription {
+  line-height: 30px;
+  transition: all 1s ease-in-out;
+}

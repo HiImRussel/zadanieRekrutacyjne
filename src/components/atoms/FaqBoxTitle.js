@@ -2,7 +2,7 @@ import FaqIcon from "./FaqIcon";
 
 const FaqBoxTitle = ({ title }) => {
   return (
-    <div class="boxTitle">
+    <div className="faqBoxTitle">
       <h3>{title}</h3>
       <FaqIcon />
     </div>
