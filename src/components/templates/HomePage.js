@@ -3,13 +3,13 @@ import FAQ from "../organisms/FAQ";
 import Header from "../organisms/Header";
 import HomeBanner from "../organisms/HomeBanner";
 
-const HomePageTemplate = ({ navLinks }) => {
+const HomePageTemplate = ({ navLinks, faqBoxesData }) => {
   return (
     <>
       <Header navLinks={navLinks} />
       <HomeBanner />
       <Banner />
-      <FAQ />
+      <FAQ faqBoxesData={faqBoxesData} />
     </>
   );
 };
