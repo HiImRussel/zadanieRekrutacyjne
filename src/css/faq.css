@@ -1,0 +1,34 @@
+.faq {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 130px;
+}
+
+.faqLeft {
+  max-width: 50%;
+}
+
+.faqLeft h2 {
+  font-size: 2.4em;
+}
+
+.faqLeft button {
+  border: 2px solid #4432ff;
+  color: #4432ff;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin-top: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faqLeft img {
+  margin-top: 20px;
+  -webkit-transform: translateX(-130px);
+          transform: translateX(-130px);
+}
+/*# sourceMappingURL=faq.css.map */
