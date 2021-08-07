@@ -1,5 +1,5 @@
-const OpinionAuthorName = () => {
-  return <p>Opinion AuthorName</p>;
+const OpinionAuthorName = ({ name }) => {
+  return <span>{name}</span>;
 };
 
 export default OpinionAuthorName;

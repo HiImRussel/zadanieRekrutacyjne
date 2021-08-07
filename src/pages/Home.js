@@ -1,6 +1,10 @@
 import HomePageTemplate from "../components/templates/HomePage";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
+  const [userOpinions, setUserOpinions] = useState([]);
+
   const navLinks = [
     {
       id: 0,
@@ -60,7 +64,21 @@ const HomePage = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
     },
   ];
-  return <HomePageTemplate navLinks={navLinks} faqBoxesData={faqBoxes} />;
+
+  useEffect(() => {
+    axios.get("https://randomuser.me/api/?results=5").then((res) => {
+      const opinions = res.data.results;
+      setUserOpinions(opinions);
+    });
+  }, []);
+
+  return (
+    <HomePageTemplate
+      navLinks={navLinks}
+      faqBoxesData={faqBoxes}
+      userOpinions={userOpinions}
+    />
+  );
 };
 
 export default HomePage;

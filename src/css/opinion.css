@@ -1,1 +1,83 @@
-/* No CSS *//*# sourceMappingURL=opinion.css.map */
+.OpinionSection {
+  width: 100%;
+  background-color: #f4f7f9;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.OpinionSection h1 {
+  text-align: center;
+  font-size: 2.4em;
+  margin-bottom: 50px;
+}
+
+.rateIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rateIcons svg {
+  height: 20px;
+  margin-right: 2px;
+}
+
+.opinionTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.OpinionBox {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e9e9e9;
+  padding: 30px;
+  margin: 0px 30px;
+}
+
+.authorBox {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authorBox img {
+  border-radius: 100%;
+}
+
+.authorBox span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.slider {
+  width: 90vw;
+}
+
+.slick-dots li.slick-active button:before {
+  content: url("../assets/icons/ui/list-active.svg");
+  height: 10px;
+}
+/*# sourceMappingURL=opinion.css.map */

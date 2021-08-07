@@ -1,5 +1,5 @@
 const OpinionDate = () => {
-  return <p>Opinion date</p>;
+  return <p>10 lipca 2020</p>;
 };
 
 export default OpinionDate;

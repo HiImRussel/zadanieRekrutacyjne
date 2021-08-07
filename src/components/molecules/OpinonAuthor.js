@@ -1,5 +1,13 @@
-const OpinionAuthor = () => {
-  return <p>Opinion Author</p>;
+import OpinionAuthorImage from "../atoms/OpinionAuthorImage";
+import OpinionAuthorName from "../atoms/OpinionAuthorName";
+
+const OpinionAuthor = ({ name, picture }) => {
+  return (
+    <div className="authorBox">
+      <OpinionAuthorImage picture={picture} />
+      <OpinionAuthorName name={name} />
+    </div>
+  );
 };
 
 export default OpinionAuthor;
