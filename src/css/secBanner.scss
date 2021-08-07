@@ -1,0 +1,28 @@
+.secBanner {
+  width: 80%;
+  height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/home-page/section-profit--background.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+    width: 60%;
+  }
+
+  p {
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    color: #000000;
+  }
+}
