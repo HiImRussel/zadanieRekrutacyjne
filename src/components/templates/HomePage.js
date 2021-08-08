@@ -1,4 +1,5 @@
 import Banner from "../organisms/Banner";
+import BenefitsNewsletter from "../organisms/BenefitsNewsletter";
 import FAQ from "../organisms/FAQ";
 import Header from "../organisms/Header";
 import HomeBanner from "../organisms/HomeBanner";
@@ -12,6 +13,7 @@ const HomePageTemplate = ({ navLinks, faqBoxesData, userOpinions }) => {
       <Banner />
       <FAQ faqBoxesData={faqBoxesData} />
       <Opinion userOpinions={userOpinions} />
+      <BenefitsNewsletter />
     </>
   );
 };
