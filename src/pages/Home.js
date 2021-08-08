@@ -8,6 +8,7 @@ import video from "../assets/icons/seo/video.svg";
 import receipt from "../assets/icons/seo/e-receipt.svg";
 import quickness from "../assets/icons/seo/quickness.svg";
 import diagnosis from "../assets/icons/seo/diagnosis.svg";
+import checked from "../assets/icons/ui/check.svg";
 
 const HomePage = () => {
   const [userOpinions, setUserOpinions] = useState([]);
@@ -111,6 +112,16 @@ const HomePage = () => {
     },
   ];
 
+  const newsletterData = [
+    { id: 0, icon: checked, text: "e-recepta i e-zwolnienie" },
+    { id: 1, icon: checked, text: "video konsultacja" },
+    { id: 2, icon: checked, text: "szybkość i prostota" },
+    { id: 3, icon: checked, text: "rezerwacja terminu on-line" },
+    { id: 4, icon: checked, text: "kontakt przez Skype lub WhatsApp" },
+    { id: 5, icon: checked, text: "pełna dyskrecja" },
+    { id: 6, icon: checked, text: "konsultacja bez zakładania konta" },
+  ];
+
   useEffect(() => {
     axios.get("https://randomuser.me/api/?results=5").then((res) => {
       const opinions = res.data.results;
@@ -124,6 +135,7 @@ const HomePage = () => {
       faqBoxesData={faqBoxes}
       userOpinions={userOpinions}
       benefitsData={benefitsData}
+      newsletterData={newsletterData}
     />
   );
 };

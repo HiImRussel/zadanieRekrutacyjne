@@ -10,6 +10,7 @@ const HomePageTemplate = ({
   faqBoxesData,
   userOpinions,
   benefitsData,
+  newsletterData,
 }) => {
   return (
     <>
@@ -18,7 +19,10 @@ const HomePageTemplate = ({
       <Banner />
       <FAQ faqBoxesData={faqBoxesData} />
       <Opinion userOpinions={userOpinions} />
-      <BenefitsNewsletter benefitsData={benefitsData} />
+      <BenefitsNewsletter
+        benefitsData={benefitsData}
+        newsletterData={newsletterData}
+      />
     </>
   );
 };

@@ -1,0 +1,76 @@
+.newsletterBox {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 30px 50px;
+  background-color: #4432ff;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconBox:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.iconBox:nth-child(1), .iconBox:nth-child(7) {
+  opacity: 0.2;
+}
+
+.iconBox:nth-child(2), .iconBox:nth-child(6) {
+  opacity: 0.5;
+}
+
+.iconBox:nth-child(3), .iconBox:nth-child(5) {
+  opacity: 0.7;
+}
+
+.iconBox img {
+  height: 10px;
+  padding: 6px 5px;
+  border-radius: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.479);
+  margin-right: 10px;
+}
+
+.newsletterLeft h1 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+}
+
+.newsletterLeft button {
+  background-color: white;
+  color: #4432ff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.newsletterRight {
+  margin-right: 50px;
+}
+/*# sourceMappingURL=newsletter.css.map */

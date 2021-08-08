@@ -1,5 +1,5 @@
-const BenefitText = () => {
-  return <p>BenefitText</p>;
+const NewsletterText = ({ text }) => {
+  return <span>{text}</span>;
 };
 
-export default BenefitText;
+export default NewsletterText;
