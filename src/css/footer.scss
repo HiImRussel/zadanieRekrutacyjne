@@ -5,3 +5,96 @@
 .footerStars {
   height: 20px;
 }
+
+footer {
+  background-color: #f4f7f9;
+  padding: 50px;
+}
+
+.footerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 14%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e7e9;
+
+  .right {
+    display: flex;
+    align-items: center;
+    .znanyLekarz {
+      display: flex;
+      align-items: center;
+      margin-right: 200px;
+      font-size: 15px;
+
+      svg {
+        margin-right: 10px;
+      }
+      img {
+        margin-left: 10px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.socialIcons {
+  img {
+    cursor: pointer;
+    &:nth-of-type(1) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.footerDown {
+  margin: 70px 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerDownLeft {
+  width: 30%;
+
+  p {
+    color: #4a4764;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+
+  li {
+    font-weight: 700;
+    margin-right: 25px;
+  }
+}
+
+.footerDownRight {
+  display: flex;
+  max-width: 50%;
+  box-sizing: border-box;
+
+  ul {
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  li {
+    display: block;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #4e4b67;
+  }
+
+  h3 {
+    color: #4432ff;
+  }
+}
+
+.linkPanel {
+  &:nth-child(1) {
+    margin-right: 70px !important;
+  }
+}

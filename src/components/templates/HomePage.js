@@ -1,3 +1,4 @@
+import RealisationSection from "../molecules/RealisationSection";
 import Banner from "../organisms/Banner";
 import BenefitsNewsletter from "../organisms/BenefitsNewsletter";
 import FAQ from "../organisms/FAQ";
@@ -31,6 +32,7 @@ const HomePageTemplate = ({
         navLinks={navLinks}
         footerLinks={footerLinks}
       />
+      <RealisationSection />
     </>
   );
 };
