@@ -9,6 +9,8 @@ import receipt from "../assets/icons/seo/e-receipt.svg";
 import quickness from "../assets/icons/seo/quickness.svg";
 import diagnosis from "../assets/icons/seo/diagnosis.svg";
 import checked from "../assets/icons/ui/check.svg";
+import fbLogo from "../assets/icons/social/facebook.svg";
+import instagramLogo from "../assets/icons/social/instagram.svg";
 
 const HomePage = () => {
   const [userOpinions, setUserOpinions] = useState([]);
@@ -122,6 +124,64 @@ const HomePage = () => {
     { id: 6, icon: checked, text: "konsultacja bez zakładania konta" },
   ];
 
+  const footerLogos = [
+    { id: 0, logo: fbLogo },
+    { id: 1, logo: instagramLogo },
+  ];
+
+  const footerLinks = [
+    {
+      id: 0,
+      title: "Pomagam w przypadkach",
+      links: [
+        { id: 0, link: "...", text: "lorem ipsum dolor sit amet" },
+        { id: 1, link: "...", text: "dermoscopy" },
+        {
+          id: 2,
+          link: "...",
+          text: "skin biopsy with a histological examination",
+        },
+        {
+          id: 3,
+          link: "...",
+          text: "curettage e.g focus of molluscum contagiusm",
+        },
+        { id: 4, link: "...", text: "electrocoagulation" },
+      ],
+    },
+    {
+      id: 1,
+      title: "Najpopularniejsze wpisy",
+      links: [
+        {
+          id: 0,
+          link: "...",
+          text: "Obowiązkowo na lato. 9 rzeczy, które warto wiedzieć o filtrach SPF",
+        },
+        {
+          id: 1,
+          link: "...",
+          text: "Jak walczyć z trądzikiem w każdym wieku?",
+        },
+        {
+          id: 2,
+          link: "...",
+          text: "5 zasad bezpiecznego opalania",
+        },
+        {
+          id: 3,
+          link: "...",
+          text: "Jak przygotować się do wizyty u dermatologa?",
+        },
+        {
+          id: 4,
+          link: "...",
+          text: "Skutecznie pozbądź się zaczerwienień na twarzy",
+        },
+      ],
+    },
+  ];
+
   useEffect(() => {
     axios.get("https://randomuser.me/api/?results=5").then((res) => {
       const opinions = res.data.results;
@@ -136,6 +196,8 @@ const HomePage = () => {
       userOpinions={userOpinions}
       benefitsData={benefitsData}
       newsletterData={newsletterData}
+      footerLogos={footerLogos}
+      footerLinks={footerLinks}
     />
   );
 };

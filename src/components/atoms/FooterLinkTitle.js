@@ -1,5 +1,5 @@
-const FooterLinkTitle = () => {
-  return <p>FooterLinkTitle</p>;
+const FooterLinkTitle = ({ title }) => {
+  return <h3>{title}</h3>;
 };
 
 export default FooterLinkTitle;
