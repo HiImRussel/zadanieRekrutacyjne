@@ -5,7 +5,12 @@ import Header from "../organisms/Header";
 import HomeBanner from "../organisms/HomeBanner";
 import Opinion from "../organisms/Opinion";
 
-const HomePageTemplate = ({ navLinks, faqBoxesData, userOpinions }) => {
+const HomePageTemplate = ({
+  navLinks,
+  faqBoxesData,
+  userOpinions,
+  benefitsData,
+}) => {
   return (
     <>
       <Header navLinks={navLinks} />
@@ -13,7 +18,7 @@ const HomePageTemplate = ({ navLinks, faqBoxesData, userOpinions }) => {
       <Banner />
       <FAQ faqBoxesData={faqBoxesData} />
       <Opinion userOpinions={userOpinions} />
-      <BenefitsNewsletter />
+      <BenefitsNewsletter benefitsData={benefitsData} />
     </>
   );
 };

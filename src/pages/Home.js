@@ -2,6 +2,13 @@ import HomePageTemplate from "../components/templates/HomePage";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+import reservation from "../assets/icons/seo/reservation.svg";
+import dicretia from "../assets/icons/seo/dicretia.svg";
+import video from "../assets/icons/seo/video.svg";
+import receipt from "../assets/icons/seo/e-receipt.svg";
+import quickness from "../assets/icons/seo/quickness.svg";
+import diagnosis from "../assets/icons/seo/diagnosis.svg";
+
 const HomePage = () => {
   const [userOpinions, setUserOpinions] = useState([]);
 
@@ -65,6 +72,45 @@ const HomePage = () => {
     },
   ];
 
+  const benefitsData = [
+    {
+      id: 0,
+      icon: reservation,
+      title: "Rezerwacja on-line",
+      text: "Nie musisz dzwonić i pisać maili wystarczy lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    },
+    {
+      id: 1,
+      icon: dicretia,
+      title: "Pełna dyskrecja",
+      text: "Możesz mieć pewność nec lacinia orci. Suspendisse non urna suismod, venenatis urna sed, faucibus magna.",
+    },
+    {
+      id: 2,
+      icon: video,
+      title: "Konsultacja video",
+      text: "Dla Waszej wygody lass aptet taciti sociosqu ad litara torquent per conubia nastra, per inceptos himenaeo.",
+    },
+    {
+      id: 3,
+      icon: receipt,
+      title: "E-recepta",
+      text: "W ramach konsultacji mogę wystawić Tobie raesent fermentum vestibulum mi, sit amet scelerisque ex ultrices at.",
+    },
+    {
+      id: 4,
+      icon: quickness,
+      title: "Szybkość i prostota",
+      text: "Jeszcze nie było tak rasent nec ullamcorper lacus. Pellentesque non ipsum eget est fermentum noc.",
+    },
+    {
+      id: 5,
+      icon: diagnosis,
+      title: "Diagnoza",
+      text: "Od lat zajmuję się dermatologią, felis massa, aliquam sit amet justo eget, gravida vestibulum magna. Aenean hen.",
+    },
+  ];
+
   useEffect(() => {
     axios.get("https://randomuser.me/api/?results=5").then((res) => {
       const opinions = res.data.results;
@@ -77,6 +123,7 @@ const HomePage = () => {
       navLinks={navLinks}
       faqBoxesData={faqBoxes}
       userOpinions={userOpinions}
+      benefitsData={benefitsData}
     />
   );
 };

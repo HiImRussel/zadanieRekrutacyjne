@@ -1,0 +1,32 @@
+.benefitBoxes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 150px 50px 0px 50px;
+  box-sizing: border-box;
+}
+
+.benefitBox {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 150px;
+  margin-left: 1.5vw;
+  margin-right: 2.5vw;
+
+  img {
+    margin-bottom: 50px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 30px;
+    color: #514e6a;
+    width: 80%;
+  }
+}
