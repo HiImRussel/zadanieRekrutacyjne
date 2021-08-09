@@ -13,27 +13,24 @@ gsap.registerPlugin(CSSPlugin);
 const Banner = () => {
   useEffect(() => {
     const secBanner = $(".secBanner").children().toArray();
-    let delay = 0;
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".secBanner",
+        start: "-20% top",
+      },
+    });
 
     secBanner.forEach((element) => {
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".secBanner",
-            start: "-20% top",
-          },
-        })
-        .fromTo(
-          element,
-          {
-            transform: "translateY(20px)",
-            opacity: 0,
-            ease: "Power4.In",
-          },
-          { transform: "translateY(0px)", opacity: 1 }
-        )
-        .delay(delay);
-      delay += 1;
+      tl.fromTo(
+        element,
+        {
+          transform: "translateY(20px)",
+          opacity: 0,
+          ease: "Power4.In",
+        },
+        { transform: "translateY(0px)", opacity: 1 }
+      ).delay(0.5);
     });
   }, []);
   return <SecBanner />;
