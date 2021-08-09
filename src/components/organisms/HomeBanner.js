@@ -12,22 +12,18 @@ gsap.registerPlugin(CSSPlugin);
 const HomeBanner = () => {
   useEffect(() => {
     const homeLeft = $(".homeBanner-left").children().toArray();
-    let delay = 0;
+    const tl = gsap.timeline();
 
     homeLeft.forEach((element) => {
-      gsap
-        .timeline()
-        .fromTo(
-          element,
-          {
-            transform: "translateX(-30px)",
-            ease: "Power4.In",
-            opacity: 0,
-          },
-          { transform: "translateX(0px)", opacity: 1 }
-        )
-        .delay(delay);
-      delay += 0.3;
+      tl.fromTo(
+        element,
+        {
+          transform: "translateX(-30px)",
+          ease: "Power4.In",
+          opacity: 0,
+        },
+        { transform: "translateX(0px)", opacity: 1 }
+      ).delay(0.2);
     });
 
     gsap.fromTo(
