@@ -81,6 +81,12 @@
   font-weight: 700;
   font-size: 1em;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletterLeft button:hover {
+  background-color: #d8d8d8;
 }
 
 .newsletterRight {

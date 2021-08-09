@@ -10,6 +10,11 @@
   a {
     margin-left: 15px;
     color: #4432ff !important;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #4432ff;
+    }
   }
 
   img {

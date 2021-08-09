@@ -45,7 +45,11 @@ const HomeBanner = () => {
       <div className="homeBanner-left">
         <HomeBannerLeft />
       </div>
-      <img src={image} alt="phone and application window" />
+      <img
+        src={image}
+        alt="phone and application window"
+        className="bannerImg"
+      />
     </section>
   );
 };

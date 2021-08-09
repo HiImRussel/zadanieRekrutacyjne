@@ -19,6 +19,12 @@
   color: #4432ff !important;
 }
 
+.realisationSection a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #4432ff;
+          text-decoration-color: #4432ff;
+}
+
 .realisationSection img {
   margin-left: 10px;
 }

@@ -9,7 +9,7 @@
   display: flex;
   padding-bottom: 50px;
 
-  img {
+  .bannerImg {
     margin-top: 7%;
     margin-left: 5%;
     width: 50vw;
@@ -49,15 +49,20 @@
       color: white;
       display: flex;
       align-items: center;
+      transition: all 0.3s ease-in-out;
 
       span {
         margin-right: 25px;
         font-size: 1.2em;
       }
-      svg {
+      img {
         border-left: 1px solid #5e4eff;
         height: 30px;
         padding: 13px 0px 13px 15px;
+      }
+
+      &:hover {
+        background-color: #3629c5;
       }
     }
 
@@ -67,6 +72,12 @@
       color: #4432ff;
       font-weight: 700;
       font-size: 1em;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #3629c5;
+        color: white;
+      }
     }
   }
 }
