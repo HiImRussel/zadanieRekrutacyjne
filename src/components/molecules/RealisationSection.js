@@ -4,7 +4,7 @@ import "../../css/realisation.css";
 
 const RealisationSection = () => {
   return (
-    <div className="realisationSection">
+    <section className="realisationSection">
       <div className="realisationLeft">
         <span>© 2020 Wszelkie prawa zastrzezone.</span>
         <a href="...">Polityka prywatności</a>
@@ -13,7 +13,7 @@ const RealisationSection = () => {
         <span>Realizacja:</span>
         <img src={footerLogo} alt="empresia logo" />
       </div>
-    </div>
+    </section>
   );
 };
 
