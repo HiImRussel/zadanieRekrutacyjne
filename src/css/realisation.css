@@ -1,4 +1,5 @@
 .realisationSection {
+  width: 65%;
   padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +12,6 @@
           align-items: center;
   font-size: 0.9em;
   font-weight: 700;
-  margin: 0px 15%;
 }
 
 .realisationSection a {

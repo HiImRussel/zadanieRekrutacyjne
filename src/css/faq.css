@@ -1,17 +1,12 @@
 .faq {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 65%;
   border-top: 1px solid #e7e7e7;
   padding-top: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 70px;
-}
-
-.faqLeft {
-  max-width: 50%;
+  padding-bottom: 100px;
 }
 
 .faqLeft h2 {
@@ -32,6 +27,7 @@
 
 .faqLeft img {
   margin-top: 20px;
+  width: 33vw;
   -webkit-transform: translateX(-130px);
           transform: translateX(-130px);
 }
@@ -44,6 +40,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 25px;
 }
 
 .faqBox {
@@ -96,5 +93,18 @@
   line-height: 30px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 1430px) {
+  .faq {
+    width: 90%;
+  }
+  .faqBoxes {
+    width: 70%;
+  }
+  .faqLeft img {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
 }
 /*# sourceMappingURL=faq.css.map */

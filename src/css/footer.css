@@ -55,6 +55,12 @@ footer {
   height: 20px;
 }
 
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .socialIcons img {
   cursor: pointer;
 }
@@ -120,5 +126,11 @@ footer {
 
 .linkPanel:nth-child(1) {
   margin-right: 70px !important;
+}
+
+@media screen and (max-width: 1430px) {
+  .footerTop .right .znanyLekarz {
+    margin-right: 20%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

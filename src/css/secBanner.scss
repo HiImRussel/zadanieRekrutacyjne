@@ -1,8 +1,6 @@
 .secBanner {
   width: 80%;
   height: 100vh;
-  margin-left: 10%;
-  margin-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,5 +24,11 @@
     text-align: center;
     color: #000000;
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .secBanner {
+    width: 90%;
   }
 }

@@ -40,6 +40,7 @@ footer {
 }
 
 .socialIcons {
+  display: flex;
   img {
     cursor: pointer;
     &:nth-of-type(1) {
@@ -96,5 +97,11 @@ footer {
 .linkPanel {
   &:nth-child(1) {
     margin-right: 70px !important;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .footerTop .right .znanyLekarz {
+    margin-right: 20%;
   }
 }
