@@ -117,11 +117,11 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .homeBanner img {
+  .homeBanner .bannerImg {
     margin-left: 0px;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    width: 75%;
+    width: 95%;
   }
   .homeBanner-left {
     text-align: center;
