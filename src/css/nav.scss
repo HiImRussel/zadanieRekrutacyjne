@@ -23,7 +23,8 @@ header {
   z-index: 4;
   padding: 0px 17.5%;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
 
   .headerButton {
     button {

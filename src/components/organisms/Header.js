@@ -3,6 +3,11 @@ import NavDesktop from "../molecules/NavDesktop";
 import "../../css/nav.css";
 import { useEffect } from "react";
 
+import gsap from "gsap/gsap-core";
+import { CSSPlugin } from "gsap/CSSPlugin";
+
+gsap.registerPlugin(CSSPlugin);
+
 const Header = ({ navLinks }) => {
   let isOpen = false;
   const handleHamburgerClick = () => {
@@ -36,6 +41,8 @@ const Header = ({ navLinks }) => {
         header.style.boxShadow = "0px 0px 0px 0px rgba(0, 0, 0, 0.28)";
       }
     });
+
+    gsap.to("header", { opacity: 1, ease: "Power4.In", duration: 0.2 });
   }, []);
 
   return (

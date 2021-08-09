@@ -1,8 +1,49 @@
 import HomeBannerLeft from "../molecules/HomeBannerLeft";
 import "../../css/homeBanner.css";
 import image from "../../assets/home-page/illustration-hero.png";
+import $ from "jquery";
+
+import gsap from "gsap/gsap-core";
+import { CSSPlugin } from "gsap/CSSPlugin";
+import { useEffect } from "react";
+
+gsap.registerPlugin(CSSPlugin);
 
 const HomeBanner = () => {
+  useEffect(() => {
+    const homeLeft = $(".homeBanner-left").children().toArray();
+    let delay = 0;
+
+    homeLeft.forEach((element) => {
+      gsap
+        .timeline()
+        .fromTo(
+          element,
+          {
+            transform: "translateX(-30px)",
+            ease: "Power4.In",
+            opacity: 0,
+          },
+          { transform: "translateX(0px)", opacity: 1 }
+        )
+        .delay(delay);
+      delay += 0.3;
+    });
+
+    gsap.fromTo(
+      ".homeBanner img",
+      {
+        transform: "translateY(50px)",
+        ease: "Power4.In",
+        opacity: 0,
+        duration: 1.5,
+      },
+      {
+        transform: "translateY(0px)",
+        opacity: 1,
+      }
+    );
+  }, []);
   return (
     <section className="homeBanner">
       <div className="homeBanner-left">
