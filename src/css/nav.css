@@ -13,7 +13,7 @@ button:focus {
 
 header {
   background-color: white;
-  width: 65%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +24,15 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+  padding: 0px 17.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 header .headerButton button {
@@ -193,13 +202,13 @@ a:active {
     display: none;
   }
   header {
-    width: 90%;
+    padding: 0px 5%;
   }
 }
 
 @media screen and (max-width: 1030px) {
   header {
-    width: 90%;
+    width: 100%;
   }
 }
 

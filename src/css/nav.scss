@@ -13,11 +13,17 @@ button:focus {
 
 header {
   background-color: white;
-  width: 65%;
+  width: 100%;
   display: flex;
   height: 120px;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+  padding: 0px 17.5%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 
   .headerButton {
     button {
@@ -167,13 +173,13 @@ a:active {
   }
 
   header {
-    width: 90%;
+    padding: 0px 5%;
   }
 }
 
 @media screen and (max-width: 1030px) {
   header {
-    width: 90%;
+    width: 100%;
   }
 }
 

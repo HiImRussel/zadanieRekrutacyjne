@@ -1,6 +1,7 @@
 import NavLogo from "../atoms/NavLogo";
 import NavDesktop from "../molecules/NavDesktop";
 import "../../css/nav.css";
+import { useEffect } from "react";
 
 const Header = ({ navLinks }) => {
   let isOpen = false;
@@ -22,6 +23,20 @@ const Header = ({ navLinks }) => {
     html.style.overflowY = isOpen ? "scroll" : "hidden";
     isOpen = !isOpen;
   };
+
+  useEffect(() => {
+    const header = document.querySelector("header");
+    document.addEventListener("scroll", () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        header.style.height = "70px";
+        header.style.boxShadow = "0px 4px 6px 2px rgba(0, 0, 0, 0.28)";
+      } else {
+        header.style.height = "120px";
+        header.style.boxShadow = "0px 0px 0px 0px rgba(0, 0, 0, 0.28)";
+      }
+    });
+  }, []);
 
   return (
     <header>
