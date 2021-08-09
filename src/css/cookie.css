@@ -1,0 +1,43 @@
+.cookie-notification {
+  position: fixed;
+  bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.31);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  font-size: 0.9em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 5%;
+}
+
+.cookie-notification span {
+  margin-right: 30px;
+  text-align: center;
+}
+
+.cookie-notification span a {
+  color: #4432ff;
+}
+
+.cookie-notification span a:hover {
+  -webkit-text-decoration-color: #4432ff;
+          text-decoration-color: #4432ff;
+  text-decoration: underline;
+}
+
+.cookie-notification button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+
+.cookie-notification button svg {
+  height: 10px;
+}
+/*# sourceMappingURL=cookie.css.map */

@@ -1,0 +1,37 @@
+.cookie-notification {
+  position: fixed;
+  bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: all 0.3s ease-in-out;
+  max-width: 90%;
+  display: flex;
+  margin: 0px 5%;
+
+  span {
+    margin-right: 30px;
+    text-align: center;
+
+    a {
+      color: #4432ff;
+
+      &:hover {
+        text-decoration-color: #4432ff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+
+    svg {
+      height: 10px;
+    }
+  }
+}

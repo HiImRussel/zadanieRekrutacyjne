@@ -1,6 +1,7 @@
 import RealisationSection from "../molecules/RealisationSection";
 import Banner from "../organisms/Banner";
 import BenefitsNewsletter from "../organisms/BenefitsNewsletter";
+import CookieNotification from "../organisms/CookieNotification";
 import FAQ from "../organisms/FAQ";
 import Footer from "../organisms/Footer";
 import Header from "../organisms/Header";
@@ -33,6 +34,7 @@ const HomePageTemplate = ({
         footerLinks={footerLinks}
       />
       <RealisationSection />
+      <CookieNotification />
     </>
   );
 };

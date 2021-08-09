@@ -42,7 +42,7 @@ const FAQ = ({ faqBoxesData }) => {
           },
           { transform: "translateY(0px)", opacity: 1 }
         )
-        .delay(0.5);
+        .delay(0.2);
     });
 
     faqBoxes.forEach((element) => {

@@ -12,7 +12,7 @@ const HomeBannerLeft = () => {
 
   return (
     <>
-      <h2>Konsultracje z lekarzem on-line</h2>
+      <h2>Konsultacje z lekarzem on-line</h2>
       <p>
         Jeżeli potrzebujesz pomocy związanej ze skórą, włosami, paznokciami lub
         natury intymnej, jesteś we właściwym miejscu. Dzięki naszej pomocy
