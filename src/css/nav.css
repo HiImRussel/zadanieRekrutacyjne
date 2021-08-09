@@ -90,7 +90,106 @@ a:active {
           align-items: center;
 }
 
+.navRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburgerMenu {
+  width: 50px;
+  height: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  margin-left: 50px;
+  position: relative;
+  z-index: 9;
+}
+
+.hamburgerMenu span {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.hamburgerMenu span .lineInside {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.mobileNav {
+  width: 0vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  left: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: right;
+  visibility: hidden;
+}
+
+.mobileNav .mobileList {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileNav nav ul {
+  padding: 0px;
+}
+
+.mobileNav nav ul li {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-right: 0px;
+  font-size: 1.4em;
+}
+
+.mobileNav nav ul li:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 1430px) {
+  .hamburgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navLeft nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1030px) {
   header {
     width: 90%;
   }
