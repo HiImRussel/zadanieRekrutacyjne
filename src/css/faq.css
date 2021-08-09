@@ -107,4 +107,62 @@
             transform: translateX(-50px);
   }
 }
+
+@media screen and (max-width: 900px) {
+  .faq {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faqBoxes {
+    margin: 0px;
+  }
+  .faqLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  .faqLeft h2 {
+    text-align: center;
+  }
+  .faqLeft button {
+    width: 40%;
+  }
+  .faqLeft img {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .faqBoxes {
+    width: 100%;
+  }
+  .OpinionSection h1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .newsletterLeft h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .faqLeft button {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=faq.css.map */

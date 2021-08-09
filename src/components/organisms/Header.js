@@ -9,6 +9,7 @@ const Header = ({ navLinks }) => {
     const lineInside = document.querySelector(".lineInside");
     const mobileMenu = document.querySelector(".mobileNav");
     const mobileList = document.querySelector(".mobileList");
+    const html = document.querySelector("html");
 
     lines[0].style.opacity = isOpen ? 1 : 0;
     lines[3].style.opacity = isOpen ? 1 : 0;
@@ -18,6 +19,7 @@ const Header = ({ navLinks }) => {
     mobileMenu.style.width = isOpen ? "0px" : "100vw";
     mobileList.style.visibility = isOpen ? "hidden" : "inherit";
     mobileList.style.opacity = isOpen ? 0 : 1;
+    html.style.overflowY = isOpen ? "scroll" : "hidden";
     isOpen = !isOpen;
   };
 
@@ -42,6 +44,9 @@ const Header = ({ navLinks }) => {
       <nav className="mobileNav">
         <div className="mobileList">
           <NavDesktop navLinks={navLinks} />
+          <a href="...." className="headerButton">
+            <button className="navButton">Zapisz się na wizytę on-line</button>
+          </a>
         </div>
       </nav>
     </header>

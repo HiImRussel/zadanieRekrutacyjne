@@ -133,4 +133,118 @@ footer {
     margin-right: 20%;
   }
 }
+
+@media screen and (max-width: 1030px) {
+  .newsletterBox {
+    width: 90%;
+  }
+  .footerTop {
+    margin: 0px;
+  }
+  .footerDown {
+    margin: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footerDown {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footerDownLeft {
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .footerDownRight {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footerTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footerLogo {
+    margin-bottom: 30px;
+  }
+  .right {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footerTop .right .znanyLekarz {
+    margin: 0px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerDownRight {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .linkPanel {
+    width: 90%;
+    text-align: center;
+  }
+  .linkPanel:nth-child(1) {
+    margin: 0px 0px 30px 0px !important;
+  }
+  .footerDownRight li {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .znanyLekarz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .znanyLekarz span {
+    width: 90%;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .znanyLekarz svg {
+    margin: 0px !important;
+  }
+  .znanyLekarz img {
+    margin: 0px !important;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

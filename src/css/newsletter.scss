@@ -1,6 +1,10 @@
+.benefit-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .newsletterBox {
-  margin-left: 15%;
-  margin-right: 15%;
   display: flex;
   width: 70%;
   justify-content: space-between;
@@ -11,6 +15,7 @@
   box-sizing: border-box;
   color: white;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .iconBox {
@@ -64,4 +69,25 @@
 
 .newsletterRight {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 1030px) {
+  .newsletterBox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletterBox {
+    justify-content: center;
+  }
+  .newsletterLeft {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .newsletterRight {
+    margin-right: 0px;
+  }
 }

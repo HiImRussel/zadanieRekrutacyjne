@@ -16,3 +16,24 @@
     margin-left: 10px;
   }
 }
+
+@media screen and (max-width: 1030px) {
+  .realisationSection {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .realisationSection {
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+  .realisationLeft {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

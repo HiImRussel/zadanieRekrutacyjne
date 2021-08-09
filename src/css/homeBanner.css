@@ -94,4 +94,54 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .homeBanner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeBanner img {
+    margin-left: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 75%;
+  }
+  .homeBanner-left {
+    text-align: center;
+  }
+  .home-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-buttons button:nth-of-type(2) {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .homeBanner-left h2 {
+    font-size: 2em;
+  }
+  .homeBanner-left {
+    width: 90%;
+  }
+  .home-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home-buttons button {
+    margin: 0px;
+    width: 100%;
+  }
+  .home-buttons button:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+  .home-buttons button:nth-of-type(2) {
+    padding: 15px;
+  }
+}
 /*# sourceMappingURL=homeBanner.css.map */

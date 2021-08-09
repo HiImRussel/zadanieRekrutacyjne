@@ -75,3 +75,50 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .homeBanner {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      margin-left: 0px;
+      transform: translateX(0px);
+      width: 75%;
+    }
+  }
+  .homeBanner-left {
+    text-align: center;
+  }
+  .home-buttons {
+    justify-content: center;
+  }
+  .home-buttons button:nth-of-type(2) {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .homeBanner-left h2 {
+    font-size: 2em;
+  }
+  .homeBanner-left {
+    width: 90%;
+  }
+  .home-buttons {
+    flex-wrap: wrap;
+
+    button {
+      margin: 0px;
+      width: 100%;
+
+      &:nth-of-type(1) {
+        margin-bottom: 20px;
+      }
+
+      &:nth-of-type(2) {
+        padding: 15px;
+      }
+    }
+  }
+}

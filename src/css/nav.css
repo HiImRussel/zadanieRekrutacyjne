@@ -162,6 +162,11 @@ a:active {
   transition: all 0.3s ease-in-out;
 }
 
+.mobileNav .mobileList .headerButton .navButton {
+  margin: 0px;
+  margin-top: 20px;
+}
+
 .mobileNav nav ul {
   padding: 0px;
 }
@@ -187,11 +192,32 @@ a:active {
   .navLeft nav {
     display: none;
   }
+  header {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1030px) {
   header {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .navButton {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .navButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navLogo {
+    width: 150px;
   }
 }
 /*# sourceMappingURL=nav.css.map */

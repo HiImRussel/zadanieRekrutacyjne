@@ -32,3 +32,22 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .secBanner h1 {
+    width: 100%;
+  }
+  .secBanner p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .secBanner {
+    height: auto;
+    padding: 100px 0px;
+  }
+  .secBanner h1 {
+    font-size: 2.4em;
+  }
+}

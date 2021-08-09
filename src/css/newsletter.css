@@ -1,6 +1,17 @@
+.benefit-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .newsletterBox {
-  margin-left: 15%;
-  margin-right: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +29,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .iconBox {
@@ -72,5 +85,27 @@
 
 .newsletterRight {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 1030px) {
+  .newsletterBox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletterBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .newsletterLeft {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .newsletterRight {
+    margin-right: 0px;
+  }
 }
 /*# sourceMappingURL=newsletter.css.map */

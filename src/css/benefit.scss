@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   padding: 150px 50px 0px 50px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .benefitBox {
@@ -28,5 +29,23 @@
     line-height: 30px;
     color: #514e6a;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .benefitBox {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .benefitBox {
+    width: 90%;
+  }
+  .boxIcon {
+    margin-left: 20px;
+  }
+  .benefitBoxes {
+    padding: 150px 0px 0px 0px;
   }
 }

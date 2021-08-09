@@ -91,3 +91,52 @@
     transform: translateX(-50px);
   }
 }
+
+@media screen and (max-width: 900px) {
+  .faq {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .faqBoxes {
+    margin: 0px;
+  }
+
+  .faqLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    h2 {
+      text-align: center;
+    }
+    button {
+      width: 40%;
+    }
+
+    img {
+      transform: translateX(0px);
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .faqBoxes {
+    width: 100%;
+  }
+  .OpinionSection h1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .newsletterLeft h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .faqLeft button {
+    width: 80%;
+  }
+}

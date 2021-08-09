@@ -3,10 +3,10 @@ import Newsletter from "./Newsletter";
 
 const BenefitsNewsletter = ({ benefitsData, newsletterData }) => {
   return (
-    <div>
+    <section className="benefit-newsletter">
       <BenefitBoxes benefitsData={benefitsData} />
       <Newsletter newsletterData={newsletterData} />
-    </div>
+    </section>
   );
 };
 
