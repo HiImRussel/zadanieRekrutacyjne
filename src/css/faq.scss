@@ -45,6 +45,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   padding: 45px 30px;
+  user-select: none;
 
   &:nth-child(1) {
     margin-top: 0px;

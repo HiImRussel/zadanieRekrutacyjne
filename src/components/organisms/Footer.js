@@ -18,7 +18,7 @@ const Footer = ({ footerLogos, navLinks, footerLinks }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".footer",
-        start: "0% top",
+        start: "-50px center",
       },
     });
 

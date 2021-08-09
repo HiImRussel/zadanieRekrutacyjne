@@ -1,6 +1,7 @@
 * {
   margin: 0px;
-  font-family: "Comfortaa", cursive;
+  font-family: "all-round-gothic", sans-serif;
+  font-style: normal;
 }
 
 body {
@@ -9,6 +10,24 @@ body {
 
 button:focus {
   outline: none;
+}
+
+button,
+button span,
+li a,
+.faqBoxTitle h3,
+.faqDescription,
+.OpinionBox p,
+.authorBox span,
+.benefitBox p,
+.iconBox span,
+footer p,
+footer h3,
+footer li,
+footer span,
+.realisationSection span,
+.realisationSection a {
+  font-family: "Comfortaa", cursive !important;
 }
 
 header {
@@ -150,7 +169,7 @@ a:active {
   background-color: white;
   position: fixed;
   z-index: 5;
-  left: 0px;
+  right: 0px;
   top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,20 +213,20 @@ a:active {
 }
 
 @media screen and (max-width: 1430px) {
-  .hamburgerMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navLeft nav {
-    display: none;
-  }
   header {
     padding: 0px 5%;
   }
 }
 
 @media screen and (max-width: 1030px) {
+  .navLeft nav {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header {
     width: 100%;
   }
@@ -222,6 +241,9 @@ a:active {
 @media screen and (max-width: 570px) {
   .navButton {
     display: none;
+  }
+  .mobileNav .mobileList .headerButton .navButton {
+    display: block !important;
   }
 }
 

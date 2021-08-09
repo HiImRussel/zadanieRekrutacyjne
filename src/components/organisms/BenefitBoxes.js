@@ -25,7 +25,7 @@ const BenefitBoxes = ({ benefitsData }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".benefitBoxes",
-        start: "30% top",
+        start: "-50px top",
       },
     });
 
