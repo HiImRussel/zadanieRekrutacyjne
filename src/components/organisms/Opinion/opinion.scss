@@ -1,8 +1,8 @@
 .OpinionSection {
   width: 90%;
   background-color: #f4f7f9;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -105,4 +105,8 @@
 .slick-dots li.slick-active button:before {
   content: url("../../../assets/icons/ui/list-active.svg");
   height: 10px;
+}
+
+.slick-list {
+  padding-bottom: 50px;
 }
