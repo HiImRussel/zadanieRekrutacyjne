@@ -46,7 +46,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 100px;
-  font-size: 0.8rem;
+  font-size: 0.89rem;
+  font-weight: 600;
 }
 
 .footer__top .footer__top__right .footer__top__right__znanyLekarz .footer__top__right__znanyLekarz__stars {

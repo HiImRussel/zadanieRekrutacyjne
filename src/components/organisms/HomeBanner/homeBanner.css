@@ -12,7 +12,7 @@
 }
 
 .homeBanner {
-  width: 65%;
+  width: 61.8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,10 +21,7 @@
 
 .homeBanner__left__bannerImg {
   margin-top: 7%;
-  margin-left: 5%;
   width: 50vw;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
 }
 
 .homeBanner__left {
