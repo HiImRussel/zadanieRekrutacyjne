@@ -9,11 +9,11 @@
   padding-bottom: 100px;
 }
 
-.faq__left .faq__left__header {
+.faq__left__header {
   font-size: 2.4em;
 }
 
-.faq__left .faq__left__button {
+.faq__left__button {
   border: 2px solid #4432ff;
   color: #4432ff;
   background-color: white;
@@ -27,12 +27,12 @@
   transition: all 0.3s ease-in-out;
 }
 
-.faq__left .faq__left__button:hover {
+.faq__left__button:hover {
   background-color: #3629c5;
   color: white;
 }
 
-.faq__left .faq__left__image {
+.faq__left__image {
   margin-top: 20px;
   width: 33vw;
   -webkit-transform: translateX(-130px) !important;
@@ -85,17 +85,6 @@
           user-select: none;
 }
 
-.faq__boxes__box__title .faq__boxes__box__title__header {
-  font-weight: 600;
-  line-height: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 .faq__boxes__box__title svg {
   height: 15px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -106,6 +95,17 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   fill: white;
+}
+
+.faq__boxes__box__title__header {
+  font-weight: 600;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .faq__boxes__box__description {
@@ -155,16 +155,16 @@
             align-items: center;
     margin-bottom: 50px;
   }
-  .faq__left .faq__left__header {
-    text-align: center;
-  }
-  .faq__left .faq__left__button {
-    width: 40%;
-  }
-  .faq__left .faq__left__image {
+  .faq__left__image {
     -webkit-transform: translateX(0px) !important;
             transform: translateX(0px) !important;
     width: 80%;
+  }
+  .faq__left__button {
+    width: 40%;
+  }
+  .faq__left__header {
+    text-align: center;
   }
 }
 

@@ -10,22 +10,22 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+}
 
-  .secBanner__header {
-    font-size: 3em;
-    text-align: center;
-    font-weight: 700;
-    width: 60%;
-  }
+.secBanner_paragraph {
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  color: #6d6b82;
+  font-weight: 600 !important;
+  line-height: 30px;
+}
 
-  .secBanner_paragraph {
-    margin-top: 30px;
-    width: 50%;
-    text-align: center;
-    color: #6d6b82;
-    font-weight: 600 !important;
-    line-height: 30px;
-  }
+.secBanner__header {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 700;
+  width: 60%;
 }
 
 @media screen and (max-width: 1430px) {

@@ -19,7 +19,7 @@
   padding-bottom: 50px;
 }
 
-.homeBanner .homeBanner__left__bannerImg {
+.homeBanner__left__bannerImg {
   margin-top: 7%;
   margin-left: 5%;
   width: 50vw;
@@ -31,12 +31,12 @@
   margin-top: 10%;
 }
 
-.homeBanner__left .homeBanner__left__header {
+.homeBanner__left__header {
   font-size: 3em;
   font-weight: 700;
 }
 
-.homeBanner__left .homeBanner__left__paragraph {
+.homeBanner__left__paragraph {
   color: #4a4764;
   margin: 20px 0px 60px 0px;
   line-height: 30px;
@@ -52,7 +52,18 @@
           justify-content: space-between;
 }
 
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button {
+.homeBanner__left__homeButtons__button__span {
+  margin-right: 25px;
+  font-size: 1.2em;
+}
+
+.homeBanner__left__homeButtons__button__img {
+  border-left: 1px solid #5e4eff;
+  height: 30px;
+  padding: 13px 0px 13px 15px;
+}
+
+.homeBanner__left__homeButtons__button {
   cursor: pointer;
   border: 0px;
   padding: 0px 15px;
@@ -60,7 +71,7 @@
   margin-right: 20px;
 }
 
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(1) {
+.homeBanner__left__homeButtons__button:nth-child(1) {
   background-color: #4432ff;
   color: white;
   display: -webkit-box;
@@ -73,22 +84,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(1) .homeBanner__left__homeButtons__button__span {
-  margin-right: 25px;
-  font-size: 1.2em;
-}
-
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(1) .homeBanner__left__homeButtons__button__img {
-  border-left: 1px solid #5e4eff;
-  height: 30px;
-  padding: 13px 0px 13px 15px;
-}
-
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(1):hover {
+.homeBanner__left__homeButtons__button:nth-child(1):hover {
   background-color: #3629c5;
 }
 
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(2) {
+.homeBanner__left__homeButtons__button:nth-child(2) {
   border: 2px solid #4432ff;
   background-color: white;
   color: #4432ff;
@@ -98,7 +98,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(2):hover {
+.homeBanner__left__homeButtons__button:nth-child(2):hover {
   background-color: #3629c5;
   color: white;
 }
@@ -117,7 +117,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .homeBanner .homeBanner__left__bannerImg {
+  .homeBanner__left__bannerImg {
     margin-left: 0px;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -147,14 +147,14 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .homeBanner__left__homeButtons .homeBanner__left__homeButtons__button {
+  .homeBanner__left__homeButtons__button {
     margin: 0px;
     width: 100%;
   }
-  .homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(1) {
+  .homeBanner__left__homeButtons__button:nth-child(1) {
     margin-bottom: 20px;
   }
-  .homeBanner__left__homeButtons .homeBanner__left__homeButtons__button:nth-child(2) {
+  .homeBanner__left__homeButtons__button:nth-child(2) {
     padding: 15px;
   }
 }

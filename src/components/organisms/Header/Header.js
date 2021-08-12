@@ -20,16 +20,18 @@ const Header = ({ navLinks }) => {
     const mobileList = document.querySelector(".header__mobileNav__mobileList");
     const html = document.querySelector("html");
 
-    gsap.to(lines[1], { rotate: isOpen ? "0deg" : "45deg" });
+    const tl = gsap.timeline();
+    const tl2 = gsap.timeline();
 
-    gsap.to(lineInside, {
-      rotate: isOpen ? "0deg" : "-90deg",
+    tl.to([lines[0], lines[2]], { opacity: isOpen ? 1 : 0 });
+
+    tl.to(lines[1], { rotate: isOpen ? "0deg" : "45deg" });
+
+    tl2.to(lineInside, {
+      rotate: isOpen ? "0deg" : "90deg",
     });
 
-    gsap.to(lines[0], { opacity: isOpen ? 1 : 0 });
-    gsap.to(lines[2], { opacity: isOpen ? 1 : 0 });
-
-    gsap.to(mobileMenu, {
+    tl2.to(mobileMenu, {
       visibility: isOpen ? "inherit" : "inherit",
       width: isOpen ? "0px" : "100vw",
       ease: Power4.easeIn,

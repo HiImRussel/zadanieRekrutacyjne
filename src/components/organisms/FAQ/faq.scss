@@ -7,34 +7,32 @@
   padding-bottom: 100px;
 }
 
-.faq__left {
-  .faq__left__header {
-    font-size: 2.4em;
-  }
+.faq__left__header {
+  font-size: 2.4em;
+}
 
-  .faq__left__button {
-    border: 2px solid #4432ff;
-    color: #4432ff;
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px 15px;
-    margin-top: 40px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.faq__left__button {
+  border: 2px solid #4432ff;
+  color: #4432ff;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin-top: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-      background-color: #3629c5;
-      color: white;
-    }
+  &:hover {
+    background-color: #3629c5;
+    color: white;
   }
+}
 
-  .faq__left__image {
-    margin-top: 20px;
-    width: 33vw;
-    transform: translateX(-130px) !important;
-  }
+.faq__left__image {
+  margin-top: 20px;
+  width: 33vw;
+  transform: translateX(-130px) !important;
 }
 
 .faq__boxes {
@@ -64,13 +62,6 @@
   align-items: center;
   user-select: none;
 
-  .faq__boxes__box__title__header {
-    font-weight: 600;
-    line-height: 20px;
-    transition: all 0.3s ease-in-out;
-    user-select: none;
-  }
-
   svg {
     height: 15px;
     transition: all 0.3s ease-in-out;
@@ -80,6 +71,13 @@
       fill: white;
     }
   }
+}
+
+.faq__boxes__box__title__header {
+  font-weight: 600;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
 }
 
 .faq__boxes__box__description {
@@ -116,17 +114,19 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    .faq__left__header {
-      text-align: center;
-    }
-    .faq__left__button {
-      width: 40%;
-    }
+  }
 
-    .faq__left__image {
-      transform: translateX(0px) !important;
-      width: 80%;
-    }
+  .faq__left__image {
+    transform: translateX(0px) !important;
+    width: 80%;
+  }
+
+  .faq__left__button {
+    width: 40%;
+  }
+
+  .faq__left__header {
+    text-align: center;
   }
 }
 

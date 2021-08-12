@@ -59,7 +59,7 @@
   opacity: 0.7;
 }
 
-.benefitNewsletter__newsletter__right__iconBox .benefitNewsletter__newsletter__right__iconBox__img {
+.benefitNewsletter__newsletter__right__iconBox__img {
   height: 10px;
   padding: 6px 5px;
   border-radius: 100%;
@@ -67,12 +67,12 @@
   margin-right: 10px;
 }
 
-.benefitNewsletter__newsletter__left .benefitNewsletter__newsletter__left__header {
+.benefitNewsletter__newsletter__left__header {
   font-size: 2.8em;
   margin-bottom: 30px;
 }
 
-.benefitNewsletter__newsletter__left .benefitNewsletter__newsletter__left__button {
+.benefitNewsletter__newsletter__left__button {
   background-color: white;
   color: #4432ff;
   border: 0px;
@@ -85,7 +85,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.benefitNewsletter__newsletter__left .benefitNewsletter__newsletter__left__button:hover {
+.benefitNewsletter__newsletter__left__button:hover {
   background-color: #d8d8d8;
 }
 

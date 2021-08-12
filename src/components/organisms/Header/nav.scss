@@ -15,12 +15,12 @@ button:focus {
 button,
 button span,
 li a,
-.faqBoxTitle h3,
-.faqDescription,
-.OpinionBox p,
-.authorBox span,
-.benefitBox p,
-.iconBox span,
+.faq__boxes__box__title__header,
+.faq__boxes__box__description,
+.OpinionSection__slider__opinionBox__paragraph,
+.OpinionSection__slider__opinionBox__authorBox__name,
+.benefitNewsletter__benefitBoxes__benefitBox__paragraph,
+.benefitNewsletter__newsletter__right__iconBox span,
 footer p,
 footer h3,
 footer li,
@@ -45,20 +45,20 @@ footer span,
   box-sizing: border-box;
   transition: all 0.2s ease-in-out;
   opacity: 0;
+}
 
-  .header__right__button__navButon,
-  .header__mobileNav__mobileList__button__navButton {
-    border: none;
-    background-color: #4432ff;
-    color: white;
-    padding: 13px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+.header__right__button__navButon,
+.header__mobileNav__mobileList__button__navButton {
+  border: none;
+  background-color: #4432ff;
+  color: white;
+  padding: 13px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
-    &:hover {
-      background-color: #3629c5;
-    }
+  &:hover {
+    background-color: #3629c5;
   }
 }
 
@@ -78,13 +78,11 @@ footer span,
   font-size: 0.9em;
 }
 
-.header__left__nav {
-  .header__left__nav__ul__li__link {
-    font-weight: 700;
+.header__left__nav__ul__li__link {
+  font-weight: 700;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -127,25 +125,25 @@ a:active {
   margin-left: 50px;
   position: relative;
   z-index: 9;
+}
 
-  .header__hamburgerMenu__line {
-    width: 50px;
-    height: 5px;
-    background-color: black;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+.header__hamburgerMenu__line--inside {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
-    .header__hamburgerMenu__line--inside {
-      width: 50px;
-      height: 5px;
-      background-color: black;
-      border-radius: 50px;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-    }
-  }
+.header__hamburgerMenu__line {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .header__mobileNav {
@@ -193,7 +191,7 @@ a:active {
 }
 
 @media screen and (max-width: 1030px) {
-  .header__left__nav {
+  .header__left .header__left__nav {
     display: none;
   }
   .header__hamburgerMenu {
