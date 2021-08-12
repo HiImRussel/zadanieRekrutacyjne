@@ -1,5 +1,5 @@
 const FaqButton = () => {
-  return <button className="PurpleBorderButton">Sprawdź całe FAQ</button>;
+  return <button className="faq__left__button">Sprawdź całe FAQ</button>;
 };
 
 export default FaqButton;

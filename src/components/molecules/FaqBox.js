@@ -29,14 +29,14 @@ const FaqBox = ({ data }) => {
         duration: 0.3,
       });
 
-      gsap.to(title, { color: "#6557FF", ease: "Power4.In", duration: 0.3 });
+      gsap.to(title, { color: "#6557FF", ease: Power4.easeIn, duration: 0.3 });
       gsap.to(box, {
         backgroundColor: "white",
         boxShadow: "2px 4px 12px 3px rgba(0, 0, 0, 0.17)",
         ease: Power4.easeIn,
         duration: 0.3,
       });
-      gsap.to(icon, { fill: "#6557FF", ease: "Power4.In", duration: 0.3 });
+      gsap.to(icon, { fill: "#6557FF", ease: Power4.easeIn, duration: 0.3 });
       gsap.to(iconBox, {
         transform: "rotate(180deg)",
         ease: Power4.easeIn,
@@ -53,14 +53,14 @@ const FaqBox = ({ data }) => {
         duration: 0.3,
       });
 
-      gsap.to(title, { color: "white", ease: "Power4.In", duration: 0.3 });
+      gsap.to(title, { color: "white", ease: Power4.easeIn, duration: 0.3 });
       gsap.to(box, {
         backgroundColor: "#4432ff",
         boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0.17)",
         ease: Power4.easeIn,
         duration: 0.3,
       });
-      gsap.to(icon, { fill: "white", ease: "Power4.In", duration: 0.3 });
+      gsap.to(icon, { fill: "white", ease: Power4.easeIn, duration: 0.3 });
       gsap.to(iconBox, {
         transform: "rotate(0deg)",
         ease: Power4.easeIn,
@@ -69,7 +69,7 @@ const FaqBox = ({ data }) => {
     }
   };
   return (
-    <div className="faqBox" onClick={(e) => handleClickBox(e)}>
+    <div className="faq__boxes__box" onClick={(e) => handleClickBox(e)}>
       <FaqBoxTitle title={title} />
       <FaqDescription desc={description} />
     </div>

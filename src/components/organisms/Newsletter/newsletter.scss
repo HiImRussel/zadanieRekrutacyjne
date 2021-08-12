@@ -96,3 +96,9 @@
     margin-right: 0px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .newsletterLeft h1 {
+    font-size: 2em;
+  }
+}

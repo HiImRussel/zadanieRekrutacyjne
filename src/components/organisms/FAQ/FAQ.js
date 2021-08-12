@@ -14,8 +14,8 @@ gsap.registerPlugin(CSSPlugin);
 
 const FAQ = ({ faqBoxesData }) => {
   useEffect(() => {
-    const faqLeft = Array.from(document.querySelector(".faqLeft").children);
-    const faqBoxes = Array.from(document.querySelector(".faqBoxes").children);
+    const faqLeft = Array.from(document.querySelector(".faq__left").children);
+    const faqBoxes = Array.from(document.querySelector(".faq__boxes").children);
 
     const tl1 = gsap.timeline({
       scrollTrigger: {
