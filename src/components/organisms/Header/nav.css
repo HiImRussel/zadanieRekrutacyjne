@@ -90,7 +90,7 @@ footer span,
   display: inline-block;
   margin-right: 20px;
   list-style: none;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .header__left__nav__ul__li__link {
@@ -213,7 +213,7 @@ a:active {
   text-align: center;
   margin-bottom: 50px;
   margin-right: 0px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .header__mobileNav .header__left__nav__ul .header__left__nav__ul__li:nth-last-child(1) {
