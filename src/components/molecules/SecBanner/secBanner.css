@@ -21,14 +21,14 @@
   margin-bottom: 30px;
 }
 
-.secBanner h1 {
+.secBanner .secBanner__header {
   font-size: 3em;
   text-align: center;
   font-weight: 700;
   width: 60%;
 }
 
-.secBanner p {
+.secBanner .secBanner_paragraph {
   margin-top: 30px;
   width: 50%;
   text-align: center;
@@ -44,10 +44,10 @@
 }
 
 @media screen and (max-width: 850px) {
-  .secBanner h1 {
+  .secBanner__header {
     width: 100%;
   }
-  .secBanner p {
+  .secBanner_paragraph {
     width: 80%;
   }
 }
@@ -57,7 +57,7 @@
     height: auto;
     padding: 100px 0px;
   }
-  .secBanner h1 {
+  .secBanner__header {
     font-size: 2.4em;
   }
 }
