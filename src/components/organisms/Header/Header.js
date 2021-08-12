@@ -25,20 +25,21 @@ const Header = ({ navLinks }) => {
 
     tl.to([lines[0], lines[2]], { opacity: isOpen ? 1 : 0 });
 
-    tl.to(lines[1], { rotate: isOpen ? "0deg" : "45deg" });
-
-    tl2.to(lineInside, {
-      rotate: isOpen ? "0deg" : "90deg",
-    });
-
     tl2.to(mobileMenu, {
       visibility: isOpen ? "inherit" : "inherit",
       width: isOpen ? "0px" : "100vw",
       ease: Power4.easeIn,
     });
-    gsap.to(mobileList, {
+
+    tl2.to(mobileList, {
       opacity: isOpen ? 0 : 1,
       ease: Power4.easeIn,
+    });
+
+    tl2.to(lines[1], { rotate: isOpen ? "0deg" : "45deg" });
+
+    tl2.to(lineInside, {
+      rotate: isOpen ? "0deg" : "90deg",
     });
 
     html.style.overflowY = isOpen ? "scroll" : "hidden";

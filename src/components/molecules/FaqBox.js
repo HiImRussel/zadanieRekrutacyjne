@@ -29,16 +29,21 @@ const FaqBox = ({ data }) => {
         duration: 0.3,
       });
 
-      gsap.to(title, { color: "#6557FF", ease: Power4.easeIn, duration: 0.3 });
+      gsap.to(title, {
+        color: "#6557FF",
+        fontWeight: 700,
+        ease: Power4.easeIn,
+        duration: 0.3,
+      });
       gsap.to(box, {
         backgroundColor: "white",
-        boxShadow: "2px 4px 12px 3px rgba(0, 0, 0, 0.17)",
+        boxShadow: "10px 7px 40px 2px rgba(0, 0, 0, 0.12)",
         ease: Power4.easeIn,
         duration: 0.3,
       });
       gsap.to(icon, { fill: "#6557FF", ease: Power4.easeIn, duration: 0.3 });
       gsap.to(iconBox, {
-        transform: "rotate(180deg)",
+        rotate: "180deg",
         ease: Power4.easeIn,
         duration: 0.3,
       });
@@ -53,7 +58,12 @@ const FaqBox = ({ data }) => {
         duration: 0.3,
       });
 
-      gsap.to(title, { color: "white", ease: Power4.easeIn, duration: 0.3 });
+      gsap.to(title, {
+        color: "white",
+        fontWeight: 400,
+        ease: Power4.easeIn,
+        duration: 0.3,
+      });
       gsap.to(box, {
         backgroundColor: "#4432ff",
         boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0.17)",
@@ -62,7 +72,7 @@ const FaqBox = ({ data }) => {
       });
       gsap.to(icon, { fill: "white", ease: Power4.easeIn, duration: 0.3 });
       gsap.to(iconBox, {
-        transform: "rotate(0deg)",
+        rotate: "0deg",
         ease: Power4.easeIn,
         duration: 0.3,
       });

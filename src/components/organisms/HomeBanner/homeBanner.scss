@@ -22,25 +22,29 @@
 }
 
 .homeBanner__left__header {
-  font-size: 3em;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
 .homeBanner__left__paragraph {
   color: #4a4764;
   margin: 20px 0px 60px 0px;
+  font-weight: 500;
+  font-size: 1rem;
   line-height: 30px;
+  font-family: "Comfortaa", cursive;
+  width: 90%;
 }
 
 .homeBanner__left__homeButtons {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
 }
 
 .homeBanner__left__homeButtons__button__span {
   margin-right: 25px;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 .homeBanner__left__homeButtons__button__img {
   border-left: 1px solid #5e4eff;
@@ -51,9 +55,8 @@
 .homeBanner__left__homeButtons__button {
   cursor: pointer;
   border: 0px;
-  padding: 0px 15px;
+  padding: 0px 25px;
   border-radius: 5px;
-  margin-right: 20px;
 
   &:nth-child(1) {
     background-color: #4432ff;
@@ -61,6 +64,7 @@
     display: flex;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    margin-right: 10px;
 
     &:hover {
       background-color: #3629c5;
@@ -74,6 +78,7 @@
     font-weight: 700;
     font-size: 1em;
     transition: all 0.3s ease-in-out;
+    margin: 0px;
 
     &:hover {
       background-color: #3629c5;

@@ -56,6 +56,10 @@ footer span,
   opacity: 0;
 }
 
+.header__right__button__navButon {
+  margin-right: 75px;
+}
+
 .header__right__button__navButon,
 .header__mobileNav__mobileList__button__navButton {
   border: none;
@@ -222,7 +226,7 @@ a:active {
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1100px) {
   .header__left .header__left__nav {
     display: none;
   }
@@ -233,6 +237,9 @@ a:active {
   }
   .header {
     width: 100%;
+  }
+  .header__right__button__navButon {
+    margin-right: 10px;
   }
 }
 

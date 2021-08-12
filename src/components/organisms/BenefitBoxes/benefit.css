@@ -15,7 +15,7 @@
 }
 
 .benefitNewsletter__benefitBoxes__benefitBox {
-  width: 20vw;
+  width: 23.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,18 +31,18 @@
           flex-direction: column;
   text-align: center;
   margin-bottom: 150px;
-  margin-left: 1.5vw;
-  margin-right: 2.5vw;
 }
 
 .benefitNewsletter__benefitBoxes__benefitBox__paragraph {
   line-height: 30px;
-  color: #514e6a;
+  color: #4a4764;
   width: 80%;
 }
 
 .benefitNewsletter__benefitBoxes__benefitBox__header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .benefitNewsletter__benefitBoxes__benefitBox__img {

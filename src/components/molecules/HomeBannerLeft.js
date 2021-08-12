@@ -3,11 +3,13 @@ import circle2 from "../../assets/icons/ui/Eclipse2.svg";
 
 const HomeBannerLeft = () => {
   const handleMouseEnter = () => {
-    document.querySelector(".home-buttons button img").src = circle2;
+    document.querySelector(".homeBanner__left__homeButtons__button__img").src =
+      circle2;
   };
 
   const handleMouseLeave = () => {
-    document.querySelector(".home-buttons button img").src = circle1;
+    document.querySelector(".homeBanner__left__homeButtons__button__img").src =
+      circle1;
   };
 
   return (
