@@ -35,8 +35,8 @@
 .faqLeft img {
   margin-top: 20px;
   width: 33vw;
-  -webkit-transform: translateX(-130px);
-          transform: translateX(-130px);
+  -webkit-transform: translateX(-130px) !important;
+          transform: translateX(-130px) !important;
 }
 
 .faqBoxes {
@@ -133,8 +133,8 @@
     width: 70%;
   }
   .faqLeft img {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
+    -webkit-transform: translateX(-50px) !important;
+            transform: translateX(-50px) !important;
   }
 }
 
@@ -169,8 +169,8 @@
     width: 40%;
   }
   .faqLeft img {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
     width: 80%;
   }
 }

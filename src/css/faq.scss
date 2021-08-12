@@ -33,7 +33,7 @@
   img {
     margin-top: 20px;
     width: 33vw;
-    transform: translateX(-130px);
+    transform: translateX(-130px) !important;
   }
 }
 
@@ -102,7 +102,7 @@
   }
 
   .faqLeft img {
-    transform: translateX(-50px);
+    transform: translateX(-50px) !important;
   }
 }
 
@@ -128,7 +128,7 @@
     }
 
     img {
-      transform: translateX(0px);
+      transform: translateX(0px) !important;
       width: 80%;
     }
   }

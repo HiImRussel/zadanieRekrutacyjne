@@ -36,11 +36,17 @@ const FAQ = ({ faqBoxesData }) => {
         .fromTo(
           element,
           {
-            transform: "translateY(20px)",
+            transform: "translateX(-150px)",
             opacity: 0,
             ease: "Power4.In",
           },
-          { transform: "translateY(0px)", opacity: 1 }
+          {
+            transform:
+              element.tagName === "IMG"
+                ? element.style.transform
+                : "translateX(0px)",
+            opacity: 1,
+          }
         )
         .delay(0.2);
     });
