@@ -46,14 +46,14 @@
 }
 .homeBanner__left__homeButtons__button__img {
   border-left: 1px solid #5e4eff;
-  height: 30px;
+  height: 27px;
   padding: 13px 0px 13px 15px;
 }
 
 .homeBanner__left__homeButtons__button {
   cursor: pointer;
   border: 0px;
-  padding: 0px 25px;
+  padding: 0px 18px 0px 25px;
   border-radius: 5px;
 
   &:nth-child(1) {
@@ -77,6 +77,7 @@
     font-size: 1rem;
     transition: all 0.3s ease-in-out;
     margin: 0px;
+    padding: 0px 25px;
 
     &:hover {
       background-color: #3629c5;
@@ -96,6 +97,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .homeBanner__left__paragraph {
+    margin: 20px 0px !important;
+    width: 100%;
+  }
+
   .homeBanner__left__bannerImg {
     margin-left: 0px;
     transform: translateX(0px);
@@ -121,6 +127,11 @@
   }
   .homeBanner__left__homeButtons {
     flex-wrap: wrap;
+    margin: 0px !important;
+    width: 100%;
+  }
+  .homeBanner__left__homeButtons__button:nth-child(1) {
+    margin: 0px;
   }
   .homeBanner__left__homeButtons__button {
     margin: 0px;

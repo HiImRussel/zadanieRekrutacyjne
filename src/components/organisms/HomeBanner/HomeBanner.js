@@ -31,13 +31,13 @@ const HomeBanner = () => {
     gsap.fromTo(
       ".homeBanner img",
       {
-        transform: "translateX(9%)",
+        transform: "translateX(15%)",
         ease: Power4.easeIn,
         opacity: 0,
         duration: 1.5,
       },
       {
-        transform: `translateX(8%)`,
+        transform: `translateX(10%)`,
         opacity: 1,
       }
     );
