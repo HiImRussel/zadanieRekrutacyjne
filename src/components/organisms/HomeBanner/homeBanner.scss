@@ -9,7 +9,7 @@
   display: flex;
   padding-bottom: 50px;
 
-  .bannerImg {
+  .homeBanner__left__bannerImg {
     margin-top: 7%;
     margin-left: 5%;
     width: 50vw;
@@ -17,45 +17,45 @@
   }
 }
 
-.homeBanner-left {
+.homeBanner__left {
   margin-top: 10%;
 
-  h2 {
+  .homeBanner__left__header {
     font-size: 3em;
     font-weight: 700;
   }
 
-  p {
+  .homeBanner__left__paragraph {
     color: #4a4764;
     margin: 20px 0px 60px 0px;
     line-height: 30px;
   }
 }
 
-.home-buttons {
+.homeBanner__left__homeButtons {
   width: 100%;
   display: flex;
   justify-content: space-between;
 
-  button {
+  .homeBanner__left__homeButtons__button {
     cursor: pointer;
     border: 0px;
     padding: 0px 15px;
     border-radius: 5px;
     margin-right: 20px;
 
-    &:nth-of-type(1) {
+    &:nth-child(1) {
       background-color: #4432ff;
       color: white;
       display: flex;
       align-items: center;
       transition: all 0.3s ease-in-out;
 
-      span {
+      .homeBanner__left__homeButtons__button__span {
         margin-right: 25px;
         font-size: 1.2em;
       }
-      img {
+      .homeBanner__left__homeButtons__button__img {
         border-left: 1px solid #5e4eff;
         height: 30px;
         padding: 13px 0px 13px 15px;
@@ -66,7 +66,7 @@
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-child(2) {
       border: 2px solid #4432ff;
       background-color: white;
       color: #4432ff;
@@ -93,42 +93,42 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    .bannerImg {
+    .homeBanner__left__bannerImg {
       margin-left: 0px;
       transform: translateX(0px);
       width: 95%;
     }
   }
-  .homeBanner-left {
+  .homeBanner__left {
     text-align: center;
   }
-  .home-buttons {
+  .homeBanner__left__homeButtons {
     justify-content: center;
   }
-  .home-buttons button:nth-of-type(2) {
+  .homeBanner__left__homeButtons button:nth-of-type(2) {
     margin: 0px;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .homeBanner-left h2 {
+  .homeBanner__left__header {
     font-size: 2em;
   }
-  .homeBanner-left {
+  .homeBanner__left {
     width: 90%;
   }
-  .home-buttons {
+  .homeBanner__left__homeButtons {
     flex-wrap: wrap;
 
-    button {
+    .homeBanner__left__homeButtons__button {
       margin: 0px;
       width: 100%;
 
-      &:nth-of-type(1) {
+      &:nth-child(1) {
         margin-bottom: 20px;
       }
 
-      &:nth-of-type(2) {
+      &:nth-child(2) {
         padding: 15px;
       }
     }

@@ -12,7 +12,7 @@ gsap.registerPlugin(CSSPlugin);
 const HomeBanner = () => {
   useEffect(() => {
     const homeLeft = Array.from(
-      document.querySelector(".homeBanner-left").children
+      document.querySelector(".homeBanner__left").children
     );
     const tl = gsap.timeline();
 
@@ -44,13 +44,13 @@ const HomeBanner = () => {
   }, []);
   return (
     <section className="homeBanner">
-      <div className="homeBanner-left">
+      <div className="homeBanner__left">
         <HomeBannerLeft />
       </div>
       <img
         src={image}
         alt="phone and application window"
-        className="bannerImg"
+        className="homeBanner__left__bannerImg"
       />
     </section>
   );
