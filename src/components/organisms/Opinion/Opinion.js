@@ -1,5 +1,5 @@
-import OpinionSlider from "./OpinionSlider";
-import "../../css/opinion.css";
+import OpinionSlider from "../OpinionSlider";
+import "./opinion.css";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

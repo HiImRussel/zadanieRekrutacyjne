@@ -1,6 +1,6 @@
-import NavLogo from "../atoms/NavLogo";
-import NavDesktop from "../molecules/NavDesktop";
-import "../../css/nav.css";
+import NavLogo from "../../atoms/NavLogo";
+import NavDesktop from "../../molecules/NavDesktop";
+import "./nav.css";
 import { useEffect } from "react";
 
 import gsap from "gsap/gsap-core";

@@ -1,7 +1,7 @@
-import FaqLeft from "../molecules/FaqLeft";
+import FaqLeft from "../../molecules/FaqLeft";
 
-import "../../css/faq.css";
-import FaqBoxes from "./FaqBoxes";
+import "./faq.css";
+import FaqBoxes from "../FaqBoxes";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

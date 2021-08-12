@@ -1,6 +1,6 @@
-import NewsletterLeft from "../molecules/NewsletterLeft";
-import NewsletterRight from "../molecules/NewsletterRight";
-import "../../css/newsletter.css";
+import NewsletterLeft from "../../molecules/NewsletterLeft";
+import NewsletterRight from "../../molecules/NewsletterRight";
+import "./newsletter.css";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

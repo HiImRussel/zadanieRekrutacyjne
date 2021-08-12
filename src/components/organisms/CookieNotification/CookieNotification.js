@@ -1,4 +1,4 @@
-import "../../css/cookie.css";
+import "./cookie.css";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

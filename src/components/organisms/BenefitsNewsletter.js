@@ -1,5 +1,5 @@
-import BenefitBoxes from "./BenefitBoxes";
-import Newsletter from "./Newsletter";
+import BenefitBoxes from "./BenefitBoxes/BenefitBoxes";
+import Newsletter from "./Newsletter/Newsletter";
 
 const BenefitsNewsletter = ({ benefitsData, newsletterData }) => {
   return (

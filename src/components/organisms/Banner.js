@@ -1,4 +1,4 @@
-import SecBanner from "../molecules/SecBanner";
+import SecBanner from "../molecules/SecBanner/SecBanner";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

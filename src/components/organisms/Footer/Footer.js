@@ -1,7 +1,7 @@
-import FooterDown from "../molecules/FooterDown";
-import FooterTop from "../molecules/FooterTop";
+import FooterDown from "../../molecules/FooterDown";
+import FooterTop from "../../molecules/FooterTop";
 
-import "../../css/footer.css";
+import "./footer.css";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

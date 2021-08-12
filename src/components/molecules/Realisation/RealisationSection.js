@@ -1,6 +1,6 @@
-import footerLogo from "../../assets/logos/logo_empressiaColor.svg";
+import footerLogo from "../../../assets/logos/logo_empressiaColor.svg";
 
-import "../../css/realisation.css";
+import "./realisation.css";
 
 const RealisationSection = () => {
   return (

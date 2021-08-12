@@ -1,6 +1,6 @@
-import HomeBannerLeft from "../molecules/HomeBannerLeft";
-import "../../css/homeBanner.css";
-import image from "../../assets/home-page/illustration-hero.png";
+import HomeBannerLeft from "../../molecules/HomeBannerLeft";
+import "./homeBanner.css";
+import image from "../../../assets/home-page/illustration-hero.png";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

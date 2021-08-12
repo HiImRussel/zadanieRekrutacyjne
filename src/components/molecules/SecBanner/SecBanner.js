@@ -1,4 +1,4 @@
-import "../../css/secBanner.css";
+import "./secBanner.css";
 
 const SecBanner = () => {
   return (

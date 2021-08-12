@@ -1,5 +1,5 @@
-import BenefitBox from "../molecules/BenefitBox";
-import "../../css/benefit.css";
+import BenefitBox from "../../molecules/BenefitBox";
+import "./benefit.css";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";

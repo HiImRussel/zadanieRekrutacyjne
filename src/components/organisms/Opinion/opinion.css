@@ -94,7 +94,7 @@ p {
   top: 0px;
   left: 0px;
   background-color: #4432ff;
-  background-image: url("../assets/icons/ui/eye.svg");
+  background-image: url("../../../assets/icons/ui/eye.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -116,7 +116,7 @@ p {
 }
 
 .slick-dots li.slick-active button:before {
-  content: url("../assets/icons/ui/list-active.svg");
+  content: url("../../../assets/icons/ui/list-active.svg");
   height: 10px;
 }
 /*# sourceMappingURL=opinion.css.map */
