@@ -14,19 +14,19 @@
   font-weight: 700;
 }
 
-.realisationSection a {
+.realisationSection .realisationSection__right__img {
+  margin-left: 10px;
+}
+
+.realisationSection__left__link {
   margin-left: 15px;
   color: #4432ff !important;
 }
 
-.realisationSection a:hover {
+.realisationSection__left__link:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #4432ff;
           text-decoration-color: #4432ff;
-}
-
-.realisationSection img {
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 1030px) {
@@ -48,7 +48,7 @@
             justify-content: center;
     padding: 50px 0px;
   }
-  .realisationLeft {
+  .realisationSection__left {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;

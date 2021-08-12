@@ -5,13 +5,19 @@ import "./realisation.css";
 const RealisationSection = () => {
   return (
     <section className="realisationSection">
-      <div className="realisationLeft">
+      <div className="realisationSection__left">
         <span>© 2020 Wszelkie prawa zastrzezone.</span>
-        <a href="...">Polityka prywatności</a>
+        <a href="..." className="realisationSection__left__link">
+          Polityka prywatności
+        </a>
       </div>
-      <div className="realisationRight">
+      <div className="realisationSection__right">
         <span>Realizacja:</span>
-        <img src={footerLogo} alt="empresia logo" />
+        <img
+          src={footerLogo}
+          alt="empresia logo"
+          className="realisationSection__right__img"
+        />
       </div>
     </section>
   );

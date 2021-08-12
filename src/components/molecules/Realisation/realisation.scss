@@ -7,18 +7,18 @@
   font-size: 0.9em;
   font-weight: 700;
 
-  a {
-    margin-left: 15px;
-    color: #4432ff !important;
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: #4432ff;
-    }
-  }
-
-  img {
+  .realisationSection__right__img {
     margin-left: 10px;
+  }
+}
+
+.realisationSection__left__link {
+  margin-left: 15px;
+  color: #4432ff !important;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #4432ff;
   }
 }
 
@@ -36,7 +36,7 @@
     justify-content: center;
     padding: 50px 0px;
   }
-  .realisationLeft {
+  .realisationSection__left {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
