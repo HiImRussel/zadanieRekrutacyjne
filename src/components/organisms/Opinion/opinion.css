@@ -18,24 +18,24 @@
           align-items: center;
 }
 
-.OpinionSection h1 {
+.OpinionSection .OpinionSection__header {
   text-align: center;
   font-size: 2.4em;
   margin-bottom: 50px;
 }
 
-.rateIcons {
+.OpinionSection__slider__opinionBox__opinionTop__rateIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.rateIcons svg {
+.OpinionSection__slider__opinionBox__opinionTop__rateIcon svg {
   height: 20px;
   margin-right: 2px;
 }
 
-.opinionTop {
+.OpinionSection__slider__opinionBox__opinionTop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +45,12 @@
   margin-bottom: 20px;
 }
 
-.opinionTop p {
+.OpinionSection__slider__opinionBox__opinionTop .OpinionSection__slider__opinionBox__opinionTop__date {
   color: #bebebe;
   text-align: right;
 }
 
-.OpinionBox {
+.OpinionSection__slider__opinionBox {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #e9e9e9;
@@ -59,16 +59,20 @@
   color: #65637b;
 }
 
-.OpinionBox:hover .authorImg::after {
+.OpinionSection__slider__opinionBox:hover .OpinionSection__slider__opinionBox__authorBox__authorImgBox::after {
   opacity: 0;
 }
 
-p {
+.OpinionSection__slider__opinionBox:hover .OpinionSection__slider__opinionBox__authorBox__name {
+  opacity: 1;
+}
+
+.OpinionSection__slider__opinionBox__paragraph {
   width: 90%;
   line-height: 30px;
 }
 
-.authorBox {
+.OpinionSection__slider__opinionBox__authorBox {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,16 +83,16 @@ p {
   margin-top: 50px;
 }
 
-.authorBox .authorImg {
+.OpinionSection__slider__opinionBox__authorBox .OpinionSection__slider__opinionBox__authorBox__authorImgBox {
   position: relative;
 }
 
-.authorBox .authorImg img {
+.OpinionSection__slider__opinionBox__authorBox .OpinionSection__slider__opinionBox__authorBox__authorImgBox .OpinionSection__slider__opinionBox__authorBox__authorImgBox__img {
   border-radius: 100%;
   position: relative;
 }
 
-.authorBox .authorImg::after {
+.OpinionSection__slider__opinionBox__authorBox .OpinionSection__slider__opinionBox__authorBox__authorImgBox::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -105,13 +109,16 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.authorBox span {
+.OpinionSection__slider__opinionBox__authorBox .OpinionSection__slider__opinionBox__authorBox__name {
   margin-left: 10px;
   font-weight: 700;
   color: black;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.slider {
+.OpinionSection__slider {
   width: 90vw;
 }
 

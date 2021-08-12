@@ -33,7 +33,7 @@ const Opinion = ({ userOpinions }) => {
 
   return (
     <section className="OpinionSection">
-      <h1>Co mówią zadowoleni klienci</h1>
+      <h1 className="OpinionSection__header">Co mówią zadowoleni klienci</h1>
       <OpinionSlider userOpinions={userOpinions} />
     </section>
   );

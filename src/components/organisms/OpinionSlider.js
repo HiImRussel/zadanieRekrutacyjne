@@ -43,7 +43,7 @@ const OpinionSlider = ({ userOpinions }) => {
   };
 
   return (
-    <div className="slider">
+    <div className="OpinionSection__slider">
       <Slider {...settings}>{Opinions.length > 0 && Opinions}</Slider>
     </div>
   );

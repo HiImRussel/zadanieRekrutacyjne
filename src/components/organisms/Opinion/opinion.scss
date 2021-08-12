@@ -8,14 +8,14 @@
   flex-direction: column;
   align-items: center;
 
-  h1 {
+  .OpinionSection__header {
     text-align: center;
     font-size: 2.4em;
     margin-bottom: 50px;
   }
 }
 
-.rateIcons {
+.OpinionSection__slider__opinionBox__opinionTop__rateIcon {
   display: flex;
 
   svg {
@@ -24,49 +24,53 @@
   }
 }
 
-.opinionTop {
+.OpinionSection__slider__opinionBox__opinionTop {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 
-  p {
+  .OpinionSection__slider__opinionBox__opinionTop__date {
     color: #bebebe;
     text-align: right;
   }
 }
 
-.OpinionBox {
+.OpinionSection__slider__opinionBox {
   background-color: white;
   border-radius: 5px;
   border: 1px solid rgb(233, 233, 233);
   padding: 60px 50px;
   margin: 0px 30px;
   color: #65637b;
-  &:hover .authorImg::after {
+  &:hover .OpinionSection__slider__opinionBox__authorBox__authorImgBox::after {
     opacity: 0;
+  }
+
+  &:hover .OpinionSection__slider__opinionBox__authorBox__name {
+    opacity: 1;
   }
 }
 
-p {
+.OpinionSection__slider__opinionBox__paragraph {
   width: 90%;
   line-height: 30px;
 }
 
-.authorBox {
+.OpinionSection__slider__opinionBox__authorBox {
   margin-top: 20px;
   display: flex;
   align-items: center;
   margin-top: 50px;
 
-  .authorImg {
+  .OpinionSection__slider__opinionBox__authorBox__authorImgBox {
     position: relative;
-    img {
+    .OpinionSection__slider__opinionBox__authorBox__authorImgBox__img {
       border-radius: 100%;
       position: relative;
     }
   }
 
-  .authorImg::after {
+  .OpinionSection__slider__opinionBox__authorBox__authorImgBox::after {
     content: "";
     position: absolute;
     top: 0px;
@@ -82,14 +86,16 @@ p {
     transition: all 0.3s ease-in-out;
   }
 
-  span {
+  .OpinionSection__slider__opinionBox__authorBox__name {
     margin-left: 10px;
     font-weight: 700;
     color: black;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
   }
 }
 
-.slider {
+.OpinionSection__slider {
   width: 90vw;
 }
 

@@ -4,7 +4,7 @@ import OpinionAuthor from "./OpinonAuthor";
 
 const OpinionBox = ({ name, picture }) => {
   return (
-    <div className="OpinionBox">
+    <div className="OpinionSection__slider__opinionBox">
       <OpinionTop />
       <OpinionText />
       <OpinionAuthor name={name} picture={picture} />

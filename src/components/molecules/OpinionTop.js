@@ -3,7 +3,7 @@ import RateIcon from "../atoms/RateIcon";
 
 const OpinionTop = () => {
   return (
-    <div className="opinionTop">
+    <div className="OpinionSection__slider__opinionBox__opinionTop">
       <RateIcon />
       <OpinionDate />
     </div>
