@@ -5,7 +5,7 @@ const FooterDownRight = ({ footerLinks }) => {
     <FooterLinkPanel key={link.id} title={link.title} links={link.links} />
   ));
   return (
-    <div className="footerDownRight">{boxLinks.length > 0 && boxLinks}</div>
+    <div className="footer__down__right">{boxLinks.length > 0 && boxLinks}</div>
   );
 };
 

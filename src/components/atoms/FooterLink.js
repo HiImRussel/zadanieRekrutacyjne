@@ -1,7 +1,7 @@
 const FooterLink = ({ link, text }) => {
   return (
     <a href={link}>
-      <li>{text}</li>
+      <li className="footer__down__right__linkPanel__ul__li">{text}</li>
     </a>
   );
 };

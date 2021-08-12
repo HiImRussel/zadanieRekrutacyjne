@@ -5,8 +5,8 @@ const FooterDownLeft = ({ navLinks }) => {
     <NavLink link={link.link} text={link.text} key={link.id} />
   ));
   return (
-    <div className="footerDownLeft">
-      <p>
+    <div className="footer__down__left">
+      <p className="footer__down__left__paragraph">
         Jeżeli potrzebujesz pomocy związanej ze skórą, włosami, paznokciami ub
         natury intymenj, jesteś we właściwym miejscu.
       </p>

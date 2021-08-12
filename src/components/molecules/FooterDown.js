@@ -3,7 +3,7 @@ import FooterDownRight from "./FooterDownRight";
 
 const FooterDown = ({ navLinks, footerLinks }) => {
   return (
-    <div className="footerDown">
+    <div className="footer__down">
       <FooterDownLeft navLinks={navLinks} />
       <FooterDownRight footerLinks={footerLinks} />
     </div>

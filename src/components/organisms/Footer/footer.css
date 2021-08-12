@@ -1,18 +1,18 @@
-.footerLogo {
+.footer__top__logo {
   height: 50px;
 }
 
-.footerStars {
+.footer__top__right__znanyLekarz__stars {
   height: 20px;
 }
 
-footer {
+.footer {
   width: 85%;
   background-color: #f4f7f9;
   padding: 50px;
 }
 
-.footerTop {
+.footer__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@ footer {
   border-bottom: 1px solid #e4e7e9;
 }
 
-.footerTop .right {
+.footer__top .footer__top__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +36,7 @@ footer {
           align-items: center;
 }
 
-.footerTop .right .znanyLekarz {
+.footer__top .footer__top__right .footer__top__right__znanyLekarz {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,30 +47,30 @@ footer {
   font-size: 15px;
 }
 
-.footerTop .right .znanyLekarz svg {
+.footer__top .footer__top__right .footer__top__right__znanyLekarz .footer__top__right__znanyLekarz__stars {
   margin-right: 10px;
 }
 
-.footerTop .right .znanyLekarz img {
+.footer__top .footer__top__right .footer__top__right__znanyLekarz .footer__top__right__znanyLekarz__img {
   margin-left: 10px;
   height: 20px;
 }
 
-.socialIcons {
+.footer__top__right__socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.socialIcons img {
+.footer__top__right__socialIcons .footer__top__right__socialIcons__icon {
   cursor: pointer;
 }
 
-.socialIcons img:nth-of-type(1) {
+.footer__top__right__socialIcons .footer__top__right__socialIcons__icon:nth-of-type(1) {
   margin-right: 20px;
 }
 
-.footerDown {
+.footer__down {
   margin: 70px 14%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,22 +84,22 @@ footer {
           justify-content: space-between;
 }
 
-.footerDownLeft {
+.footer__down__left {
   width: 40%;
 }
 
-.footerDownLeft p {
+.footer__down__left .footer__down__left__paragraph {
   color: #4a4764;
   line-height: 25px;
   margin-bottom: 50px;
 }
 
-.footerDownLeft li {
+.footer__down__left li {
   font-weight: 700;
   margin-right: 25px;
 }
 
-.footerDownRight {
+.footer__down__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,12 +108,12 @@ footer {
           box-sizing: border-box;
 }
 
-.footerDownRight ul {
+.footer__down__right .footer__down__right__linkPanel__ul {
   padding: 0px;
   margin-top: 20px;
 }
 
-.footerDownRight li {
+.footer__down__right .footer__down__right__linkPanel__ul__li {
   display: block;
   line-height: 25px;
   margin-top: 10px;
@@ -121,46 +121,43 @@ footer {
   color: #4e4b67;
 }
 
-.footerDownRight h3 {
+.footer__down__right .footer__down__right__linkPanel__title {
   color: #4432ff;
 }
 
-.linkPanel:nth-child(1) {
+.footer__down__right__linkPanel:nth-child(1) {
   margin-right: 70px !important;
 }
 
 @media screen and (max-width: 1430px) {
-  .footerTop .right .znanyLekarz {
+  .footer__top__right__znanyLekarz {
     margin-right: 20%;
   }
 }
 
 @media screen and (max-width: 1030px) {
-  .newsletterBox {
-    width: 90%;
-  }
-  .footerTop {
+  .footer__top {
     margin: 0px;
   }
-  .footerDown {
+  .footer__down {
     margin: 70px 0px;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .footerDown {
+  .footer__top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footerDownLeft {
+  .footer__down__left {
     width: 90%;
     margin-bottom: 30px;
     text-align: center;
   }
-  .footerDownRight {
+  .footer__down__right {
     margin-top: 40px;
     width: 90%;
     max-width: 100%;
@@ -171,7 +168,7 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-  .footerTop {
+  .footer__top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -184,10 +181,10 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footerLogo {
+  .footer__top__logo {
     margin-bottom: 30px;
   }
-  .right {
+  .footer__down__right {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -195,7 +192,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footerTop .right .znanyLekarz {
+  .footer__top__right__znanyLekar {
     margin: 0px;
     width: 100%;
     -webkit-box-pack: center;
@@ -206,24 +203,24 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  footer {
+  .footer {
     padding: 50px 0px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .footerDownRight {
+  .footer__down__right {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .linkPanel {
+  .footer__down__right__linkPanel {
     width: 90%;
     text-align: center;
   }
-  .linkPanel:nth-child(1) {
+  .footer__down__right__linkPanel:nth-child(1) {
     margin: 0px 0px 30px 0px !important;
   }
-  .footerDownRight li {
+  .footer__down__right li {
     margin-right: 0px;
   }
 }

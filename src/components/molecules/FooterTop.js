@@ -6,11 +6,11 @@ const FooterTop = ({ footerLogos }) => {
     <FooterSocialLogo key={logo.id} logo={logo.logo} />
   ));
   return (
-    <div className="footerTop">
+    <div className="footer__top">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 56 56"
-        className="footerLogo"
+        className="footer__top__logo"
       >
         <g fill="none">
           <path
@@ -29,12 +29,12 @@ const FooterTop = ({ footerLogos }) => {
         </g>
       </svg>
 
-      <div className="right">
-        <div className="znanyLekarz">
+      <div className="footer__top__right">
+        <div className="footer__top__right__znanyLekarz">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 108 20"
-            className="footerStars"
+            className="footer__top__right__znanyLekarz__stars"
           >
             <path
               fill="#01C3A5"
@@ -43,10 +43,14 @@ const FooterTop = ({ footerLogos }) => {
             />
           </svg>
           <span>5.0 (163 opinine) na</span>
-          <img src={znanyLogo} alt="znant lekarz logo" />
+          <img
+            src={znanyLogo}
+            alt="znant lekarz logo"
+            className="footer__top__right__znanyLekarz__img"
+          />
         </div>
 
-        <div className="socialIcons">
+        <div className="footer__top__right__socialIcons">
           {socialLogos.length > 0 && socialLogos}
         </div>
       </div>

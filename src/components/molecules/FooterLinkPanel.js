@@ -6,9 +6,11 @@ const FooterLinkPanel = ({ title, links }) => {
     <FooterLink key={link.id} link={link.link} text={link.text} />
   ));
   return (
-    <div className="linkPanel">
+    <div className="footer__down__right__linkPanel">
       <FooterLinkTitle title={title} />
-      {boxLinks.length > 0 && <ul>{boxLinks}</ul>}
+      {boxLinks.length > 0 && (
+        <ul className="footer__down__right__linkPanel__ul">{boxLinks}</ul>
+      )}
     </div>
   );
 };
