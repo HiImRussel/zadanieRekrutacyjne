@@ -1,7 +1,6 @@
 import HomeBannerLeft from "../molecules/HomeBannerLeft";
 import "../../css/homeBanner.css";
 import image from "../../assets/home-page/illustration-hero.png";
-import $ from "jquery";
 
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
@@ -11,7 +10,9 @@ gsap.registerPlugin(CSSPlugin);
 
 const HomeBanner = () => {
   useEffect(() => {
-    const homeLeft = $(".homeBanner-left").children().toArray();
+    const homeLeft = Array.from(
+      document.querySelector(".homeBanner-left").children
+    );
     const tl = gsap.timeline();
 
     homeLeft.forEach((element) => {

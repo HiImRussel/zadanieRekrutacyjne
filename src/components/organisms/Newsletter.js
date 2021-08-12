@@ -5,7 +5,6 @@ import "../../css/newsletter.css";
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
-import $ from "jquery";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -13,8 +12,12 @@ gsap.registerPlugin(CSSPlugin);
 
 const Newsletter = ({ newsletterData }) => {
   useEffect(() => {
-    const newsletterLeft = $(".newsletterLeft").children().toArray();
-    const newsletterRight = $(".newsletterRight").children().toArray();
+    const newsletterLeft = Array.from(
+      document.querySelector(".newsletterLeft").children
+    );
+    const newsletterRight = Array.from(
+      document.querySelector(".newsletterRight").children
+    );
 
     const tl1 = gsap.timeline({
       scrollTrigger: {

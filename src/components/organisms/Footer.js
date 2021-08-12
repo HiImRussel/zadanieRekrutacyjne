@@ -6,7 +6,6 @@ import "../../css/footer.css";
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
-import $ from "jquery";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,11 +13,11 @@ gsap.registerPlugin(CSSPlugin);
 
 const Footer = ({ footerLogos, navLinks, footerLinks }) => {
   useEffect(() => {
-    const footer = $(".footer").children().toArray();
+    const footer = Array.from(document.querySelector(".footer").children);
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".footer",
-        start: "-50px center",
+        start: "-100px top",
       },
     });
 

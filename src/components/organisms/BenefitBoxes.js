@@ -4,7 +4,6 @@ import "../../css/benefit.css";
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
-import $ from "jquery";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +20,9 @@ const BenefitBoxes = ({ benefitsData }) => {
   ));
 
   useEffect(() => {
-    const benefitBoxes = $(".benefitBoxes").children().toArray();
+    const benefitBoxes = Array.from(
+      document.querySelector(".benefitBoxes").children
+    );
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".benefitBoxes",

@@ -4,7 +4,6 @@ import "../../css/opinion.css";
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
-import $ from "jquery";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,7 +11,9 @@ gsap.registerPlugin(CSSPlugin);
 
 const Opinion = ({ userOpinions }) => {
   useEffect(() => {
-    const opinionSection = $(".OpinionSection").children().toArray();
+    const opinionSection = Array.from(
+      document.querySelector(".OpinionSection").children
+    );
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".OpinionSection",

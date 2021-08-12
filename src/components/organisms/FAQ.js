@@ -6,7 +6,6 @@ import FaqBoxes from "./FaqBoxes";
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
-import $ from "jquery";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,8 +13,8 @@ gsap.registerPlugin(CSSPlugin);
 
 const FAQ = ({ faqBoxesData }) => {
   useEffect(() => {
-    const faqLeft = $(".faqLeft").children().toArray();
-    const faqBoxes = $(".faqBoxes").children().toArray();
+    const faqLeft = Array.from(document.querySelector(".faqLeft").children);
+    const faqBoxes = Array.from(document.querySelector(".faqBoxes").children);
 
     const tl1 = gsap.timeline({
       scrollTrigger: {

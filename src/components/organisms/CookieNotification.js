@@ -1,11 +1,24 @@
 import "../../css/cookie.css";
 
+import gsap from "gsap/gsap-core";
+import { CSSPlugin } from "gsap/CSSPlugin";
+import { useEffect } from "react";
+
+gsap.registerPlugin(CSSPlugin);
+
 const CookieNotification = () => {
   const handleCloseCookiesClick = () => {
     document.querySelector(".cookie-notification").style.opacity = 0;
     document.querySelector(".cookie-notification").style.visibility = "hidden";
   };
 
+  useEffect(() => {
+    gsap.fromTo(
+      ".cookie-notification",
+      { opacity: 0, ease: "Power4.In", duration: 0.3 },
+      { opacity: 1, ease: "Power4.In", duration: 0.3 }
+    );
+  }, []);
   return (
     <section className="cookie-notification">
       <span>
