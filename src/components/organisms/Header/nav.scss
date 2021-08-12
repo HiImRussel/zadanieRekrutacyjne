@@ -31,7 +31,7 @@ footer span,
   font-family: "Comfortaa", cursive !important;
 }
 
-header {
+.header {
   background-color: white;
   width: 100%;
   display: flex;
@@ -46,37 +46,40 @@ header {
   transition: all 0.2s ease-in-out;
   opacity: 0;
 
-  .headerButton {
-    button {
-      border: none;
-      background-color: #4432ff;
-      color: white;
-      padding: 13px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
+  .header__right__button__navButon,
+  .header__mobileNav__mobileList__button__navButton {
+    border: none;
+    background-color: #4432ff;
+    color: white;
+    padding: 13px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
-      &:hover {
-        background-color: #3629c5;
-      }
+    &:hover {
+      background-color: #3629c5;
     }
   }
 }
 
-.navLogo {
+.header__mobileNav__mobileList__button__navButton {
+  margin-top: 30px;
+}
+
+.header__left__logo {
   width: 250px;
   cursor: pointer;
 }
 
-li {
+.header__left__nav__ul__li {
   display: inline-block;
   margin-right: 20px;
   list-style: none;
   font-size: 0.9em;
 }
 
-nav {
-  a {
+.header__left__nav {
+  .header__left__nav__ul__li__link {
     font-weight: 700;
 
     &:hover {
@@ -104,17 +107,17 @@ a:active {
   color: black;
 }
 
-.navLeft {
+.header__left {
   display: flex;
   align-items: center;
 }
 
-.navRight {
+.header__right {
   display: flex;
   align-items: center;
 }
 
-.hamburgerMenu {
+.header__hamburgerMenu {
   width: 50px;
   height: 35px;
   flex-direction: column;
@@ -125,7 +128,7 @@ a:active {
   position: relative;
   z-index: 9;
 
-  span {
+  .header__hamburgerMenu__line {
     width: 50px;
     height: 5px;
     background-color: black;
@@ -133,7 +136,7 @@ a:active {
     transition: all 0.3s ease-in-out;
     position: relative;
 
-    .lineInside {
+    .header__hamburgerMenu__line--inside {
       width: 50px;
       height: 5px;
       background-color: black;
@@ -145,7 +148,7 @@ a:active {
   }
 }
 
-.mobileNav {
+.header__mobileNav {
   width: 0vw;
   height: 100vh;
   background-color: white;
@@ -160,19 +163,16 @@ a:active {
   float: right;
   visibility: hidden;
 
-  .mobileList {
-    transition: all 0.3s ease-in-out;
-    .headerButton {
-      .navButton {
-        margin: 0px;
-        margin-top: 20px;
-      }
+  .header__right__button {
+    .header__right__button__navButton {
+      margin: 0px;
+      margin-top: 20px;
     }
   }
 
-  nav ul {
+  .header__left__nav__ul {
     padding: 0px;
-    li {
+    .header__left__nav__ul__li {
       display: block;
       text-align: center;
       margin-bottom: 50px;
@@ -187,40 +187,40 @@ a:active {
 }
 
 @media screen and (max-width: 1430px) {
-  header {
+  .header {
     padding: 0px 5%;
   }
 }
 
 @media screen and (max-width: 1030px) {
-  .navLeft nav {
+  .header__left__nav {
     display: none;
   }
-  .hamburgerMenu {
+  .header__hamburgerMenu {
     display: flex;
   }
-  header {
+  .header {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 670px) {
-  .navButton {
+  .header__right__button__navButon {
     margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 570px) {
-  .navButton {
+  .header__right__button__navButon {
     display: none;
   }
-  .mobileNav .mobileList .headerButton .navButton {
+  .header__mobileNav__mobileList__button__navButton {
     display: block !important;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .navLogo {
+  .header__left__logo {
     width: 150px;
   }
 }

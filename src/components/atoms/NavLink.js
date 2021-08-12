@@ -1,7 +1,9 @@
 const NavLink = ({ link, text }) => {
   return (
-    <li>
-      <a href={link}>{text}</a>
+    <li className="header__left__nav__ul__li">
+      <a href={link} className="header__left__nav__ul__li__link">
+        {text}
+      </a>
     </li>
   );
 };

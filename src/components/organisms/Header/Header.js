@@ -12,19 +12,23 @@ gsap.registerPlugin(CSSPlugin);
 const Header = ({ navLinks }) => {
   let isOpen = false;
   const handleHamburgerClick = () => {
-    const lines = document.querySelectorAll(".hamburgerMenu span");
-    const lineInside = document.querySelector(".lineInside");
-    const mobileMenu = document.querySelector(".mobileNav");
-    const mobileList = document.querySelector(".mobileList");
+    const lines = document.querySelectorAll(".header__hamburgerMenu__line");
+    const lineInside = document.querySelector(
+      ".header__hamburgerMenu__line--inside"
+    );
+    const mobileMenu = document.querySelector(".header__mobileNav");
+    const mobileList = document.querySelector(".header__mobileNav__mobileList");
     const html = document.querySelector("html");
 
-    gsap.to(lines[0], { opacity: isOpen ? 1 : 0 });
-    gsap.to(lines[3], { opacity: isOpen ? 1 : 0 });
     gsap.to(lines[1], { rotate: isOpen ? "0deg" : "45deg" });
 
     gsap.to(lineInside, {
       rotate: isOpen ? "0deg" : "-90deg",
     });
+
+    gsap.to(lines[0], { opacity: isOpen ? 1 : 0 });
+    gsap.to(lines[2], { opacity: isOpen ? 1 : 0 });
+
     gsap.to(mobileMenu, {
       visibility: isOpen ? "inherit" : "inherit",
       width: isOpen ? "0px" : "100vw",
@@ -40,7 +44,7 @@ const Header = ({ navLinks }) => {
   };
 
   useEffect(() => {
-    const header = document.querySelector("header");
+    const header = document.querySelector(".header");
     document.addEventListener("scroll", () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 0) {
@@ -56,28 +60,32 @@ const Header = ({ navLinks }) => {
   }, []);
 
   return (
-    <header>
-      <div className="navLeft">
+    <header className="header">
+      <div className="header__left">
         <NavLogo />
         <NavDesktop navLinks={navLinks} />
       </div>
-      <div className="navRight">
-        <a href="...." className="headerButton">
-          <button className="navButton">Zapisz się na wizytę on-line</button>
+      <div className="header__right">
+        <a href="...." className="header__right__button">
+          <button className="header__right__button__navButon">
+            Zapisz się na wizytę on-line
+          </button>
         </a>
-        <div className="hamburgerMenu" onClick={handleHamburgerClick}>
-          <span></span>
-          <span>
-            <span className="lineInside"></span>
+        <div className="header__hamburgerMenu" onClick={handleHamburgerClick}>
+          <span className="header__hamburgerMenu__line"></span>
+          <span className="header__hamburgerMenu__line">
+            <span className="header__hamburgerMenu__line--inside"></span>
           </span>
-          <span></span>
+          <span className="header__hamburgerMenu__line"></span>
         </div>
       </div>
-      <nav className="mobileNav">
-        <div className="mobileList">
+      <nav className="header__mobileNav">
+        <div className="header__mobileNav__mobileList">
           <NavDesktop navLinks={navLinks} />
-          <a href="...." className="headerButton">
-            <button className="navButton">Zapisz się na wizytę on-line</button>
+          <a href="...." className="header__mobileNav__mobileList__button">
+            <button className="header__mobileNav__mobileList__button__navButton">
+              Zapisz się na wizytę on-line
+            </button>
           </a>
         </div>
       </nav>

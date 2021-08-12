@@ -5,8 +5,8 @@ const NavDesktop = ({ navLinks }) => {
     <NavLink key={link.id} link={link.link} text={link.text} />
   ));
   return (
-    <nav>
-      <ul>{nav}</ul>
+    <nav className="header__left__nav">
+      <ul className="header__left__nav__ul">{nav}</ul>
     </nav>
   );
 };
