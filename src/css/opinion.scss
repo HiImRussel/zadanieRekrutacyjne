@@ -1,5 +1,5 @@
 .OpinionSection {
-  width: 100%;
+  width: 90%;
   background-color: #f4f7f9;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -31,6 +31,7 @@
 
   p {
     color: #bebebe;
+    text-align: right;
   }
 }
 
@@ -38,22 +39,53 @@
   background-color: white;
   border-radius: 5px;
   border: 1px solid rgb(233, 233, 233);
-  padding: 30px;
+  padding: 60px 50px;
   margin: 0px 30px;
+  color: #65637b;
+  &:hover .authorImg::after {
+    opacity: 0;
+  }
+}
+
+p {
+  width: 90%;
+  line-height: 30px;
 }
 
 .authorBox {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  margin-top: 50px;
 
-  img {
+  .authorImg {
+    position: relative;
+    img {
+      border-radius: 100%;
+      position: relative;
+    }
+  }
+
+  .authorImg::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #4432ff;
+    background-image: url("../assets/icons/ui/eye.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
   }
 
   span {
     margin-left: 10px;
     font-weight: 700;
+    color: black;
   }
 }
 

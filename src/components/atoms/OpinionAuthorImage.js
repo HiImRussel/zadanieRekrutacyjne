@@ -1,5 +1,9 @@
 const OpinionAuthorImage = ({ picture }) => {
-  return <img src={picture} alt="happy client" />;
+  return (
+    <div className="authorImg">
+      <img src={picture} alt="happy client" />
+    </div>
+  );
 };
 
 export default OpinionAuthorImage;

@@ -7,6 +7,7 @@
 }
 
 footer {
+  width: 85%;
   background-color: #f4f7f9;
   padding: 50px;
 }
@@ -84,7 +85,7 @@ footer {
 }
 
 .footerDownLeft {
-  width: 35%;
+  width: 40%;
 }
 
 .footerDownLeft p {
