@@ -4,6 +4,7 @@ import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Power4 } from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,7 +27,7 @@ const Banner = () => {
         {
           transform: "translateY(20px)",
           opacity: 0,
-          ease: "Power4.In",
+          ease: Power4.easeIn,
         },
         { transform: "translateY(0px)", opacity: 1 }
       ).delay(0.5);

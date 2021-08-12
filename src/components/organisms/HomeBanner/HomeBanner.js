@@ -5,6 +5,7 @@ import image from "../../../assets/home-page/illustration-hero.png";
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { useEffect } from "react";
+import { Power4 } from "gsap";
 
 gsap.registerPlugin(CSSPlugin);
 
@@ -20,7 +21,7 @@ const HomeBanner = () => {
         element,
         {
           transform: "translateX(-30px)",
-          ease: "Power4.In",
+          ease: Power4.easeIn,
           opacity: 0,
         },
         { transform: "translateX(0px)", opacity: 1 }
@@ -31,7 +32,7 @@ const HomeBanner = () => {
       ".homeBanner img",
       {
         transform: "translateY(50px)",
-        ease: "Power4.In",
+        ease: Power4.easeIn,
         opacity: 0,
         duration: 1.5,
       },

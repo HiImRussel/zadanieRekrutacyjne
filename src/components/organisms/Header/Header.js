@@ -4,6 +4,7 @@ import "./nav.css";
 import { useEffect } from "react";
 
 import gsap from "gsap/gsap-core";
+import { Power4 } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 
 gsap.registerPlugin(CSSPlugin);
@@ -17,14 +18,23 @@ const Header = ({ navLinks }) => {
     const mobileList = document.querySelector(".mobileList");
     const html = document.querySelector("html");
 
-    lines[0].style.opacity = isOpen ? 1 : 0;
-    lines[3].style.opacity = isOpen ? 1 : 0;
-    lines[1].style.transform = isOpen ? "rotate(0deg)" : "rotate(45deg)";
-    lineInside.style.transform = isOpen ? "rotate(0deg)" : "rotate(-90deg)";
-    mobileMenu.style.visibility = isOpen ? "hidden" : "inherit";
-    mobileMenu.style.width = isOpen ? "0px" : "100vw";
-    mobileList.style.visibility = isOpen ? "hidden" : "inherit";
-    mobileList.style.opacity = isOpen ? 0 : 1;
+    gsap.to(lines[0], { opacity: isOpen ? 1 : 0 });
+    gsap.to(lines[3], { opacity: isOpen ? 1 : 0 });
+    gsap.to(lines[1], { rotate: isOpen ? "0deg" : "45deg" });
+
+    gsap.to(lineInside, {
+      rotate: isOpen ? "0deg" : "-90deg",
+    });
+    gsap.to(mobileMenu, {
+      visibility: isOpen ? "inherit" : "inherit",
+      width: isOpen ? "0px" : "100vw",
+      ease: Power4.easeIn,
+    });
+    gsap.to(mobileList, {
+      opacity: isOpen ? 0 : 1,
+      ease: Power4.easeIn,
+    });
+
     html.style.overflowY = isOpen ? "scroll" : "hidden";
     isOpen = !isOpen;
   };

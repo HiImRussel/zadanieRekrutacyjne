@@ -1,5 +1,6 @@
 import gsap from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
+import { Power4 } from "gsap";
 import FaqDescription from "../atoms/FaqBoxDescription";
 import FaqBoxTitle from "../atoms/FaqBoxTitle";
 
@@ -24,15 +25,23 @@ const FaqBox = ({ data }) => {
         marginTop: "20px",
         color: "#585570",
         visibility: "inherit",
-        ease: "Power4.easeIn",
+        ease: Power4.easeIn,
         duration: 0.3,
       });
 
-      title.style.color = "#6557FF";
-      box.style.backgroundColor = "white";
-      box.style.boxShadow = "2px 4px 12px 3px rgba(0, 0, 0, 0.17)";
-      icon.style.fill = "#6557FF";
-      iconBox.style.transform = "rotate(180deg)";
+      gsap.to(title, { color: "#6557FF", ease: "Power4.In", duration: 0.3 });
+      gsap.to(box, {
+        backgroundColor: "white",
+        boxShadow: "2px 4px 12px 3px rgba(0, 0, 0, 0.17)",
+        ease: Power4.easeIn,
+        duration: 0.3,
+      });
+      gsap.to(icon, { fill: "#6557FF", ease: "Power4.In", duration: 0.3 });
+      gsap.to(iconBox, {
+        transform: "rotate(180deg)",
+        ease: Power4.easeIn,
+        duration: 0.3,
+      });
     } else {
       gsap.to(description, {
         maxHeight: "0px",
@@ -40,15 +49,23 @@ const FaqBox = ({ data }) => {
         marginTop: "0px",
         color: "#4432ff",
         visibility: "hidden",
-        ease: "Power4.easeIn",
+        ease: Power4.easeIn,
         duration: 0.3,
       });
 
-      title.style.color = "white";
-      box.style.backgroundColor = "#4432ff";
-      box.style.boxShadow = "0px 0px 0px 0px rgba(0, 0, 0, 0.17)";
-      icon.style.fill = "white";
-      iconBox.style.transform = "rotate(0deg)";
+      gsap.to(title, { color: "white", ease: "Power4.In", duration: 0.3 });
+      gsap.to(box, {
+        backgroundColor: "#4432ff",
+        boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0.17)",
+        ease: Power4.easeIn,
+        duration: 0.3,
+      });
+      gsap.to(icon, { fill: "white", ease: "Power4.In", duration: 0.3 });
+      gsap.to(iconBox, {
+        transform: "rotate(0deg)",
+        ease: Power4.easeIn,
+        duration: 0.3,
+      });
     }
   };
   return (
