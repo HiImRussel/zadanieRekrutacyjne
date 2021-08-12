@@ -3,7 +3,7 @@ import Newsletter from "./Newsletter/Newsletter";
 
 const BenefitsNewsletter = ({ benefitsData, newsletterData }) => {
   return (
-    <section className="benefit-newsletter">
+    <section className="benefitNewsletter">
       <BenefitBoxes benefitsData={benefitsData} />
       <Newsletter newsletterData={newsletterData} />
     </section>

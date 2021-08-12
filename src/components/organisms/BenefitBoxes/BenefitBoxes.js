@@ -22,11 +22,11 @@ const BenefitBoxes = ({ benefitsData }) => {
 
   useEffect(() => {
     const benefitBoxes = Array.from(
-      document.querySelector(".benefitBoxes").children
+      document.querySelector(".benefitNewsletter__benefitBoxes").children
     );
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".benefitBoxes",
+        trigger: ".benefitNewsletter__benefitBoxes",
         start: "-50px top",
       },
     });
@@ -39,7 +39,7 @@ const BenefitBoxes = ({ benefitsData }) => {
       ).delay(0.2);
     });
   }, []);
-  return <div className="benefitBoxes">{boxes}</div>;
+  return <div className="benefitNewsletter__benefitBoxes">{boxes}</div>;
 };
 
 export default BenefitBoxes;

@@ -1,4 +1,4 @@
-.benefit-newsletter {
+.benefitNewsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.newsletterBox {
+.benefitNewsletter__newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +33,7 @@
       flex-wrap: wrap;
 }
 
-.iconBox {
+.benefitNewsletter__newsletter__right__iconBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,23 +43,23 @@
   margin-bottom: 20px;
 }
 
-.iconBox:nth-last-child(1) {
+.benefitNewsletter__newsletter__right__iconBox:nth-last-child(1) {
   margin-bottom: 0px;
 }
 
-.iconBox:nth-child(1), .iconBox:nth-child(7) {
+.benefitNewsletter__newsletter__right__iconBox:nth-child(1), .benefitNewsletter__newsletter__right__iconBox:nth-child(7) {
   opacity: 0.2;
 }
 
-.iconBox:nth-child(2), .iconBox:nth-child(6) {
+.benefitNewsletter__newsletter__right__iconBox:nth-child(2), .benefitNewsletter__newsletter__right__iconBox:nth-child(6) {
   opacity: 0.5;
 }
 
-.iconBox:nth-child(3), .iconBox:nth-child(5) {
+.benefitNewsletter__newsletter__right__iconBox:nth-child(3), .benefitNewsletter__newsletter__right__iconBox:nth-child(5) {
   opacity: 0.7;
 }
 
-.iconBox img {
+.benefitNewsletter__newsletter__right__iconBox .benefitNewsletter__newsletter__right__iconBox__img {
   height: 10px;
   padding: 6px 5px;
   border-radius: 100%;
@@ -67,12 +67,12 @@
   margin-right: 10px;
 }
 
-.newsletterLeft h1 {
+.benefitNewsletter__newsletter__left .benefitNewsletter__newsletter__left__header {
   font-size: 2.8em;
   margin-bottom: 30px;
 }
 
-.newsletterLeft button {
+.benefitNewsletter__newsletter__left .benefitNewsletter__newsletter__left__button {
   background-color: white;
   color: #4432ff;
   border: 0px;
@@ -85,38 +85,38 @@
   transition: all 0.3s ease-in-out;
 }
 
-.newsletterLeft button:hover {
+.benefitNewsletter__newsletter__left .benefitNewsletter__newsletter__left__button:hover {
   background-color: #d8d8d8;
 }
 
-.newsletterRight {
+.benefitNewsletter__newsletter__right {
   margin-right: 50px;
 }
 
 @media screen and (max-width: 1137px) {
-  .newsletterBox {
+  .benefitNewsletter__newsletter {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .newsletterBox {
+  .benefitNewsletter__newsletter {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .newsletterLeft {
+  .benefitNewsletter__newsletter__left {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
   }
-  .newsletterRight {
+  .benefitNewsletter__newsletter__right {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .newsletterLeft h1 {
+  .benefitNewsletter__newsletter__left__header {
     font-size: 2em;
   }
 }

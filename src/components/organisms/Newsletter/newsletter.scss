@@ -1,10 +1,10 @@
-.benefit-newsletter {
+.benefitNewsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.newsletterBox {
+.benefitNewsletter__newsletter {
   display: flex;
   width: 62%;
   justify-content: space-between;
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
 }
 
-.iconBox {
+.benefitNewsletter__newsletter__right__iconBox {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -40,7 +40,7 @@
     opacity: 0.7;
   }
 
-  img {
+  .benefitNewsletter__newsletter__right__iconBox__img {
     height: 10px;
     padding: 6px 5px;
     border-radius: 100%;
@@ -49,13 +49,13 @@
   }
 }
 
-.newsletterLeft {
-  h1 {
+.benefitNewsletter__newsletter__left {
+  .benefitNewsletter__newsletter__left__header {
     font-size: 2.8em;
     margin-bottom: 30px;
   }
 
-  button {
+  .benefitNewsletter__newsletter__left__button {
     background-color: white;
     color: #4432ff;
     border: 0px;
@@ -72,33 +72,33 @@
   }
 }
 
-.newsletterRight {
+.benefitNewsletter__newsletter__right {
   margin-right: 50px;
 }
 
 @media screen and (max-width: 1137px) {
-  .newsletterBox {
+  .benefitNewsletter__newsletter {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .newsletterBox {
+  .benefitNewsletter__newsletter {
     justify-content: center;
   }
-  .newsletterLeft {
+  .benefitNewsletter__newsletter__left {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
   }
 
-  .newsletterRight {
+  .benefitNewsletter__newsletter__right {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .newsletterLeft h1 {
+  .benefitNewsletter__newsletter__left__header {
     font-size: 2em;
   }
 }

@@ -4,7 +4,7 @@ import BenefitText from "../atoms/BenefitText";
 
 const BenefitBox = ({ icon, title, text }) => {
   return (
-    <div className="benefitBox">
+    <div className="benefitNewsletter__benefitBoxes__benefitBox">
       <BenefitIcon icon={icon} />
       <BenefitTitle title={title} />
       <BenefitText text={text} />

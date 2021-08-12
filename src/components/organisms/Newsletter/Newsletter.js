@@ -14,10 +14,10 @@ gsap.registerPlugin(CSSPlugin);
 const Newsletter = ({ newsletterData }) => {
   useEffect(() => {
     const newsletterLeft = Array.from(
-      document.querySelector(".newsletterLeft").children
+      document.querySelector(".benefitNewsletter__newsletter__left").children
     );
     const newsletterRight = Array.from(
-      document.querySelector(".newsletterRight").children
+      document.querySelector(".benefitNewsletter__newsletter__right").children
     );
 
     const tl1 = gsap.timeline({
@@ -54,7 +54,7 @@ const Newsletter = ({ newsletterData }) => {
     });
   }, []);
   return (
-    <div className="newsletterBox">
+    <div className="benefitNewsletter__newsletter">
       <NewsletterLeft />
       <NewsletterRight newsletterData={newsletterData} />
     </div>

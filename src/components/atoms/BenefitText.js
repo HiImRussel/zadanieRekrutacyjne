@@ -1,5 +1,9 @@
 const BenefitText = ({ text }) => {
-  return <p>{text}</p>;
+  return (
+    <p className="benefitNewsletter__benefitBoxes__benefitBox__paragraph">
+      {text}
+    </p>
+  );
 };
 
 export default BenefitText;

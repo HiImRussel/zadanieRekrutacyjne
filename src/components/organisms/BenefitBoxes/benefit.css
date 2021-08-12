@@ -1,4 +1,4 @@
-.benefitBoxes {
+.benefitNewsletter__benefitBoxes {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-.benefitBox {
+.benefitNewsletter__benefitBoxes__benefitBox {
   width: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,34 +35,34 @@
   margin-right: 2.5vw;
 }
 
-.benefitBox img {
+.benefitNewsletter__benefitBoxes__benefitBox .benefitNewsletter__benefitBoxes__benefitBox__img {
   margin-bottom: 50px;
 }
 
-.benefitBox h2 {
+.benefitNewsletter__benefitBoxes__benefitBox .benefitNewsletter__benefitBoxes__benefitBox__header {
   margin-bottom: 20px;
 }
 
-.benefitBox p {
+.benefitNewsletter__benefitBoxes__benefitBox .benefitNewsletter__benefitBoxes__benefitBox__paragraph {
   line-height: 30px;
   color: #514e6a;
   width: 80%;
 }
 
 @media screen and (max-width: 1030px) {
-  .benefitBox {
+  .benefitNewsletter__benefitBoxes__benefitBox {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .benefitBox {
+  .benefitNewsletter__benefitBoxes__benefitBox {
     width: 90%;
   }
-  .boxIcon {
+  .benefitNewsletter__benefitBoxes__benefitBox__img {
     margin-left: 20px;
   }
-  .benefitBoxes {
+  .benefitNewsletter__benefitBoxes {
     padding: 150px 0px 0px 0px;
   }
 }

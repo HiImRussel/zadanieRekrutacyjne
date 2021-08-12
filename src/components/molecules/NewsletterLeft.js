@@ -1,11 +1,13 @@
 const NewsletterLeft = () => {
   return (
-    <div className="newsletterLeft">
-      <h1>
+    <div className="benefitNewsletter__newsletter__left">
+      <h1 className="benefitNewsletter__newsletter__left__header">
         Zapisz się na
         <br /> wizytę on-line
       </h1>
-      <button>Zarezerwuj termin już teraz</button>
+      <button className="benefitNewsletter__newsletter__left__button">
+        Zarezerwuj termin już teraz
+      </button>
     </div>
   );
 };

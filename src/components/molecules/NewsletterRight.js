@@ -6,7 +6,7 @@ const NewsletterRight = ({ newsletterData }) => {
     .map((data) => (
       <NewsletterIconBox key={data.id} icon={data.icon} text={data.text} />
     ));
-  return <div className="newsletterRight">{box}</div>;
+  return <div className="benefitNewsletter__newsletter__right">{box}</div>;
 };
 
 export default NewsletterRight;
