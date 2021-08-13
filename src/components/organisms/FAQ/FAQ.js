@@ -19,14 +19,14 @@ const FAQ = ({ faqBoxesData }) => {
 
     const tl1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".faqLeft",
+        trigger: ".faq__left",
         start: "-350px top",
       },
     });
 
     const tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".faqBoxes",
+        trigger: ".faq__boxes",
         start: "-350px top",
       },
     });

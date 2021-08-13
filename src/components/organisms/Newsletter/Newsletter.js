@@ -22,13 +22,13 @@ const Newsletter = ({ newsletterData }) => {
 
     const tl1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".newsletterBox",
+        trigger: ".benefitNewsletter__newsletter",
         start: "-150px top",
       },
     });
     const tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".newsletterBox",
+        trigger: ".benefitNewsletter__newsletter",
         start: "-150px top",
       },
     });
