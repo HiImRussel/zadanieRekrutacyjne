@@ -123,8 +123,8 @@
   }
   .homeBanner__left__bannerImg {
     margin-left: 0px;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
     width: 95%;
   }
   .homeBanner__left {
