@@ -82,6 +82,12 @@
 
 @media screen and (max-width: 1500px) {
   .benefitNewsletter__newsletter {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .benefitNewsletter__newsletter {
     justify-content: center;
   }
   .benefitNewsletter__newsletter__left {
